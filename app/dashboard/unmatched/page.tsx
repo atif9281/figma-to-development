@@ -47,7 +47,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -62,7 +62,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -75,7 +75,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -88,7 +88,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center border-r-0  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -101,7 +101,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center border-r-0  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -114,7 +114,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -127,7 +127,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -140,7 +140,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -153,7 +153,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -166,7 +166,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center border-r-0 border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
@@ -179,7 +179,7 @@ export default function Unmatched() {
                                                             <td scope="row" className=" font-medium pl-2  border border-b-0  border-secondary">Text Field</td>
                                                             <td scope="row" className=" font-medium text-center  border-b-0 border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border-b-0  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border-b-0  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
+                                                            <td scope="row" className=" font-medium text-center border-r-0 border-b-0  border border-secondary py-2"><a className="border border-b-secondary">Match</a></td>
 
 
 
