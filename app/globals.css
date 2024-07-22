@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.backgroundColor {
+  background: rgba(240, 243, 238, 1);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.darkGreen {
+  color: rgba(0, 86, 64, 1);
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.buttonColor {
+  background-color: rgba(0, 206, 126, 1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.boxShadow {
+  box-shadow: 5px 0px 10px 0px rgba(30, 30, 30, 0.25);
+
+}
+
+.link{
+  color: rgba(20, 48, 42, 1);
+
+}
+
+.activeLink {
+  color: rgba(0, 206, 126, 1);
+
+}
+
+.linkBackground{
+  background: rgba(20, 48, 42, 1);
+
+}
+
+.skinBackground {
+  background-color: rgba(186, 143, 82, 1);
+  ;
+}
+
+.darkBackground {
+  background: rgba(0, 86, 64, 1);
+
+}
+
+.tabBackGround {
+  background-color: rgba(234, 234, 234, 1);
+}
+
+.less-italic {
+  font-style: italic;
+  font-variant: normal;
+  transform: skew(-5deg); /* Adjust the skew value to make it less tilted */
 }
