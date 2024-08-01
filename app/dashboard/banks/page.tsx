@@ -175,41 +175,43 @@ export default function Banks() {
                                                             <td scope="row" className=" font-medium border border-darker-secondary"><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"></div></div></td>
                                                             <td scope="row" className=" font-medium text-center">
                                                                 <div className="flex flex-row justify-between items-center pl-2">
-                                                                    <div>Currencies Receivable: ZAR</div><button onClick={openSendBankDetails}><ModalComponent isOpen={sendBankDetails} closeModal={closeSendBankDetails} title="View/Send Bank Account Details">
+                                                                    <div>Currencies Receivable: ZAR</div><button onClick={openSendBankDetails}><ModalComponent isOpen={sendBankDetails} closeModal={closeSendBankDetails} title={clientDetails}>
                                                                         <div className="">
-                                                                            <form action="" className="text-sm">
+                                                                            <div className="px-16 pt-4 pb-8">
+                                                                                <form action="" className="text-sm">
 
-                                                                                <div className="mb-4 mt-2 text-sm flex flex-row justify-end">
-                                                                                    <label className="mr-4">Account Name: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
-                                                                                </div>
-                                                                                <div className="mb-4 text-sm flex flex-row justify-end">
-                                                                                    <label className="mr-4">ACH and Wire Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
-                                                                                </div>
-                                                                                <div className="mb-4 text-sm flex flex-row justify-end">
-                                                                                    <label className="mr-4">Account Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
-                                                                                </div>
-                                                                                <div className="mb-4 text-sm flex flex-row justify-end">
-                                                                                    <label className="mr-4">Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
-                                                                                </div>
-                                                                                <div className="mb-4 text-sm flex flex-row justify-end">
-                                                                                    <label className="mr-4">Bank Address: </label><textarea rows={4} name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
-                                                                                </div>
-                                                                                <div className="mb-4 text-sm flex flex-row justify-end">
-                                                                                    <label className="mr-4">Reference: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
-                                                                                </div>
-                                                                                <div className="flex justify-center"><form action="" className="text-sm max-w-[50%] ">
-                                                                                    <div className="my-4 text-sm backgroundColor less-italic">
-                                                                                        <input type="email" name="email" id="email" placeholder="Enter Email Address" className="px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 mt-2 text-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4">Account Name: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
                                                                                     </div>
+                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4">ACH and Wire Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    </div>
+                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4">Account Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    </div>
+                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4">Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    </div>
+                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4">Bank Address: </label><textarea rows={2} name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    </div>
+                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4">Reference: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    </div>
+                                                                                    <div className="flex justify-center"><form action="" className="text-sm max-w-[50%] ">
+                                                                                        <div className="mt-6 text-sm backgroundColor ">
+                                                                                            <input type="email" name="email" id="email" placeholder="Enter Email Address" className="px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                                        </div>
 
-                                                                                </form></div>
+                                                                                    </form></div>
 
 
-                                                                                <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                    <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded mr-2 px-2 h-8">send</button>
-                                                                                    <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded px-2 h-8">close</button>
-                                                                                </div>
-                                                                            </form>
+                                                                                    <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded mr-2 px-2 h-8">send</button>
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded px-2 h-8">close</button>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
                                                                         </div>
                                                                     </ModalComponent><img src="/images/sendIcon.png" /></button></div>
                                                             </td>
