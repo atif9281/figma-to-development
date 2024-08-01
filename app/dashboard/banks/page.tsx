@@ -207,8 +207,8 @@ export default function Banks() {
 
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                        <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">send</button>
-                                                                                        <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">close</button>
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Send</button>
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
                                                                                     </div>
                                                                                 </form>
                                                                             </div>
