@@ -73,8 +73,8 @@ export default function Withdraw () {
                                                                                     </div>
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-8">Release</button>
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-2 h-8">Cancel</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Release</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -126,7 +126,7 @@ export default function Withdraw () {
                                                                             </div>
 
                                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-2 h-8">Close</button>
+                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
                                                                             </div>
                                                                         </form>
                                                                     </div>
@@ -153,8 +153,8 @@ export default function Withdraw () {
                                                                                     </div>
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-2">
-                                                                                        <button type="button" onClick={closeAddModal} className=" buttonColor rounded mr-2 px-2 h-8">Decline</button>
-                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-2 h-8">Cancel</button>
+                                                                                        <button type="button" onClick={closeAddModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Decline</button>
+                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>

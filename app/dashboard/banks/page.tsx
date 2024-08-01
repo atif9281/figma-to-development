@@ -80,7 +80,7 @@ export default function Banks() {
                                                             </div>
 
                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-2 h-8">Close</button>
+                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -114,7 +114,7 @@ export default function Banks() {
                                                             </div>
 
                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                <button type="button" onClick={openConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-8">Delete</button>
+                                                                <button type="button" onClick={openConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Delete</button>
                                                                 <ModalComponent isOpen={confimDeleteModel} closeModal={closeConfirmDeleteModal} title="">
                                                                     <div className="">
                                                                         <form action="" className="text-sm">
@@ -128,14 +128,14 @@ export default function Banks() {
                                                                                 </div>
 
                                                                                 <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-8">cancel</button>
-                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-2 h-8">delete</button>
+                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">cancel</button>
+                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">delete</button>
                                                                                 </div></div>
 
                                                                         </form>
                                                                     </div>
                                                                 </ModalComponent>
-                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-2 h-8">cancel</button>
+                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
 
                                                             </div>
                                                         </form>
