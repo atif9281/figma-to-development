@@ -16,7 +16,7 @@ export default function Settings() {
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
-                        <div>
+                        <div className="heading2">
                             Withdrawals
                         </div>
 
@@ -26,7 +26,7 @@ export default function Settings() {
 
 
                         <div className="mt-2">
-                            <div className="rounded">
+                            <div className="rounded rounded-t-none">
 
 
 
@@ -35,7 +35,7 @@ export default function Settings() {
                                         {['Users', 'Company', 'Banks', 'Currencies', 'Restrictions', 'Limits', 'Messages'].map((tab) => (
                                             <li role="presentation" key={tab}>
                                                 <button
-                                                    className={`inline-block px-4 py-1 rounded-lg rounded-b-none${activeTab.toLowerCase() === tab.toLowerCase()
+                                                    className={`inline-block px-4 py-1 rounded rounded-b-none${activeTab.toLowerCase() === tab.toLowerCase()
                                                         ? 'link bg-white'
                                                         : 'link tabBackGround '
                                                         }`}
@@ -51,7 +51,7 @@ export default function Settings() {
                                         ))}
                                     </ul>
                                     <div>
-                                        <div className={`${activeTab === 'users' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div className={`${activeTab === 'users' ? '' : 'hidden'} p-4 rounded rounded-b-none bg-white dark:bg-gray-800`} id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>
@@ -59,7 +59,7 @@ export default function Settings() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={`${activeTab === 'company' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                                        <div className={`${activeTab === 'company' ? '' : 'hidden'} p-4 rounded bg-white dark:bg-gray-800`} id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>
@@ -67,7 +67,7 @@ export default function Settings() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={`${activeTab === 'banks' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                        <div className={`${activeTab === 'banks' ? '' : 'hidden'} p-4 rounded bg-white dark:bg-gray-800`} id="settings" role="tabpanel" aria-labelledby="settings-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>
@@ -75,7 +75,7 @@ export default function Settings() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={`${activeTab === 'currencies' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                                        <div className={`${activeTab === 'currencies' ? '' : 'hidden'} p-4 rounded bg-white dark:bg-gray-800`} id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>
@@ -83,7 +83,7 @@ export default function Settings() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={`${activeTab === 'restrictions' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+                                        <div className={`${activeTab === 'restrictions' ? '' : 'hidden'} p-4 rounded bg-white dark:bg-gray-800`} id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>
@@ -91,7 +91,7 @@ export default function Settings() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={`${activeTab === 'limits' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                        <div className={`${activeTab === 'limits' ? '' : 'hidden'} p-4 rounded bg-white dark:bg-gray-800`} id="messages" role="tabpanel" aria-labelledby="messages-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>
@@ -99,7 +99,7 @@ export default function Settings() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={`${activeTab === 'messages' ? '' : 'hidden'} p-4 rounded-lg bg-white dark:bg-gray-800`} id="activity" role="tabpanel" aria-labelledby="activity-tab">
+                                        <div className={`${activeTab === 'messages' ? '' : 'hidden'} p-4 rounded bg-white dark:bg-gray-800`} id="activity" role="tabpanel" aria-labelledby="activity-tab">
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">ADD</button>

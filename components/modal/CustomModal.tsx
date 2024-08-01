@@ -5,7 +5,7 @@ import { Fragment, useState } from 'react';
 interface ModalProps {
   isOpen: boolean;
   closeModal: () => void;
-  title: string;
+  title: string | React.ReactNode;
   children: React.ReactNode;
 }
 
@@ -37,12 +37,12 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, title, children }) =>
               leaveTo="opacity-0 scale-95"
             >
               
-              <div className='min-w-[50%] max-w-md flex justify-center items-center'>
-              <Dialog.Panel className=" transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+              <div className='min-w-[50%] flex justify-center items-center ml-44 mt-16'>
+              <Dialog.Panel className=" transform overflow-hidden rounded bg-white  text-left align-middle shadow-xl transition-all">
+                <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 ">
                   {title}
                 </Dialog.Title>
-                <div className="mt-2">
+                <div className="">
                   {children}
                 </div>
 
