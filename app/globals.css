@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-p,a,table,div,button{
+p,
+a,
+table,
+div,
+button {
   font-family: 'Lato', sans-serif;
 }
 
@@ -18,6 +22,11 @@ p,a,table,div,button{
 
 .buttonColor {
   background-color: rgba(0, 206, 126, 1);
+}
+
+.authShadow{
+  box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .boxShadow {
@@ -67,57 +76,64 @@ p,a,table,div,button{
 }
 
 .heading1 {
-  Width: 451px;
-  Height: 38px;
-  font-family: 'Aleo', sans-serif; /* Ensure Aleo font is loaded or available */
-  font-weight: 700; /* Bold weight */
-  font-size: 40px; /* Font size */
-  line-height: 48px; /* Line height */
+
+  font-family: 'Aleo', sans-serif;
+  font-weight: 700;
+  /* Bold weight */
+  font-size: 15px;
+  /* Font size */
+  line-height: 48px;
+  /* Line height */
 }
 
-.authParagragh{
+.authParagraph {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  font-size: 15px;
   line-height: 25.2px;
   text-align: left;
 }
 
-.heading2{
+.heading2 {
   font-family: 'Aleo', sans-serif;
 }
 
-.historyTimer{
+.historyTimer {
   width: 25px;
   height: 23.57px;
 }
 
-.dashboardDivs{
-  
-    width: 515px;
-    height: 142px;
+.dashboardDivs {
 
-  
+  width: 515px;
+  height: 142px;
+
+
 }
 
 .border-b-darker-secondary {
-  border-bottom-color: #6b6f74; /* Example darker color */
+  border-bottom-color: #6b6f74;
+  /* Example darker color */
 }
 
 .border-darker-secondary {
-  border-color: #6b6f74; /* Example darker color */
+  border-color: #6b6f74;
+  /* Example darker color */
 }
 
 .border-l-darker-secondary {
-  border-left-color: #6b6f74; /* Example darker color */
+  border-left-color: #6b6f74;
+  /* Example darker color */
 }
 
 .border-r-darker-secondary {
-  border-right-color: #6b6f74; /* Example darker color */
+  border-right-color: #6b6f74;
+  /* Example darker color */
 }
 
 
 .rec-border {
-  border-color: rgba(0, 86, 64, 1) ;
+  border-color: rgba(0, 86, 64, 1);
 }
 
 text {
@@ -128,6 +144,88 @@ text {
 }
 
 .border-modal {
-  border-color: rgba(0, 206, 126, 1);;
+  border-color: rgba(0, 206, 126, 1);
+  ;
 }
 
+.input-container {
+  position: relative;
+  width: 331.23px; /* Set the container width */
+  height: 42.26px; /* Set the container height */
+}
+
+/* Input styles */
+.inputClass {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  color: rgba(140, 155, 145, 1);
+  background-color: rgba(240, 243, 238, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  font-family: 'Lato', sans-serif;
+  border-radius: 5px;
+  opacity: 1; /* Make the input visible */
+  font-style: normal; /* Reset to normal */
+  /* Reset transform and text styles for the input itself */
+  transform: none;
+}
+
+/* Pseudo-element for the text skew effect */
+.inputClass::placeholder {
+  color: rgba(140, 155, 145, 1);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  font-style: normal; /* Normal font style */
+  transform: skewX(-5deg); /* Apply skew transform to placeholder text */
+}
+
+
+
+
+
+
+/* Small devices (sm, 640px and up) */
+@media (min-width: 640px) {
+  .heading1 {
+    font-size: 1.125rem;
+    /* This is equivalent to 'lg' in Tailwind, 18px */
+  }
+}
+
+/* Medium devices (md, 768px and up) */
+@media (min-width: 768px) {
+  .heading1 {
+    font-size: 1.25rem;
+    /* This is equivalent to 'xl' in Tailwind, 20px */
+  }
+}
+
+/* Large devices (lg, 1024px and up) */
+@media (min-width: 1024px) {
+  .heading1 {
+    font-size: 1.5rem;
+    /* This is equivalent to '2xl' in Tailwind, 24px */
+  }
+}
+
+/* Extra large devices (2xl, 1536px and up) */
+@media (min-width: 1536px) {
+  .heading1 {
+    font-size: 40px;
+    /* This is equivalent to '4xl' in Tailwind, 36px */
+  }
+
+  .authParagraph {
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  .buttonFont{
+    font-size: 20px;
+font-weight: 700;
+
+  }
+}

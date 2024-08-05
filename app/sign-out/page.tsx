@@ -19,7 +19,7 @@ export default function SignOut() {
 
 
                                 <div className="pt-28  ">
-                                    <h1 className="heading1 tracking-wide darkGreen lg:text-xl">
+                                    <h1 className="heading1 tracking-wide darkGreen ">
                                         Signed Out
                                     </h1>
                                     <p className="flex items-center -mx-2 link">
@@ -33,13 +33,13 @@ export default function SignOut() {
                                 
                                     
                                     <div className="mb-24">
-                                        <button type="button" className=" px-2 pt-1.5 text-white buttonColor rounded-md">SIGN IN</button>
+                                        <button type="button" className="buttonFont px-2 pt-1.5 pb-1.5 text-white buttonColor rounded-lg authShadow">SIGN IN</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
 
-                        <div className="flex items-center justify-center w-full h-96 lg:w-1/2 ">
+                        <div className="flex items-center justify-center w-full lg:w-1/2 ">
                             <img className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/images/signin.png" alt="glasses photo" />
                         </div>
                     </div>
