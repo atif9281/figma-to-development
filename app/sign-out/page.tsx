@@ -4,10 +4,10 @@ export default function SignOut() {
     return (
 
         <>
-            <div className="h-screen flex justify-center items-center backgroundColor">
+            <div className="min-h-screen flex justify-center items-center backgroundColor">
                 <section className=" lg:w-4/6 dark:bg-gray-800 flex justify-between backgroundColor">
 
-                    <div className=" bg-white container flex flex-col justify-between mx-auto space-y-16  lg:my-8 lg:flex-row lg:items-center rounded boxShadow">
+                    <div className="xl:px-16 xl:py-8 2xl:px-16 2xl:py-8 bg-white container flex flex-col justify-between mx-auto space-y-16  lg:my-8 lg:flex-row lg:items-center rounded boxShadow">
 
                         <div className="w-1/2">
                             <div className="left-0 logoHeightAndWidth">
@@ -15,7 +15,7 @@ export default function SignOut() {
 
                             </div>
 
-                            <div className="ml-10">
+                            <div className="ml-14">
 
 
                                 <div className="pt-28  ">
@@ -28,7 +28,7 @@ export default function SignOut() {
                                 </div>
                             </div>
 
-                            <div className="ml-10">
+                            <div className="ml-14">
                                 <form action="" className="text-sm">
                                 
                                     

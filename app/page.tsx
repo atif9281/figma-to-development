@@ -10,12 +10,14 @@ export default function Home() {
   
   };
 
+
+
   return (
     <div className="min-h-screen">
     <div className="min-h-screen flex justify-center items-center backgroundColor">
                 <section className=" lg:w-4/6 dark:bg-gray-800 flex justify-between backgroundColor">
 
-                    <div className=" bg-white container flex flex-col justify-between mx-auto space-y-16  lg:my-8 lg:flex-row lg:items-center rounded authShadow">
+                    <div className="xl:px-16 xl:py-8 2xl:px-16 2xl:py-8  bg-white container flex flex-col justify-between mx-auto space-y-16  lg:my-8 lg:flex-row lg:items-center rounded authShadow">
 
                         <div className="w-1/2 ">
                             <div className="left-0 2xl:-mt-16 xl:-mt-6 logoHeightAndWidth">
@@ -23,7 +25,7 @@ export default function Home() {
 
                             </div>
 
-                            <div className="ml-10">
+                            <div className="ml-14">
 
 
                                 <div className="pt-10 xl:pt-0 2xl:pt-10">
@@ -36,18 +38,18 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="ml-10">
+                            <div className="ml-14">
                                 <form action="" className="text-sm">
-                                    <div className="my-4 2xl:mt-8 text-sm  w-1/2 input-container">
-                                        <input type="email" name="email" id="email" placeholder="Enter Email Address" className="w-full px-3 py-1 inputClass less-italic focus:outline-none text-sm  rounded" />
+                                    <div className="my-4 2xl:mt-8 text-sm  w-1/2 input-container ">
+                                        <input type="email" name="email" id="email" placeholder="Enter Email Address" className="w-full px-4 py-1  inputClass less-italic focus:outline-none text-sm  rounded" />
                                     </div>
                                     <div className="mb-4 text-sm w-1/2 input-container">
-                                        <input type="password" name="password" id="password" placeholder="Enter Password" className="w-full px-3 py-1 inputClass focus:outline-none text-sm  rounded" />
+                                        <input type="password" name="password" id="password" placeholder="Enter Password" className="w-full px-4 py-1  inputClass focus:outline-none text-sm  rounded" />
                                     </div>
                                     <div className="2xl:mt-7 mb-4">
                                         <button type="button" onClick={handleClick} className="buttonFont px-2 pt-1.5 pb-1.5 text-white buttonColor rounded-lg">SIGN IN</button>
                                     </div>
-                                    <a href="access-request" className="darkGreen border border-x-0 border-t-0 border-b-customBorderColor authParagraph text-xs">Request Access</a>
+                                    <a href="access-request" className="darkGreen border border-x-0 border-t-0  border-b-customBorderColor authParagraph text-xs">Request Access</a>
                                 </form>
                             </div>
                         </div>

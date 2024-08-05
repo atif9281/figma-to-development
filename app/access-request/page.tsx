@@ -17,7 +17,7 @@ export default function AccessRequest() {
             <div className="min-h-screen flex justify-center items-center backgroundColor">
                 <section className=" lg:w-4/6 dark:bg-gray-800 flex justify-between backgroundColor">
 
-                    <div className=" bg-white container flex flex-col justify-between mx-auto space-y-16  lg:my-8 lg:flex-row lg:items-center rounded authShadow">
+                    <div className="xl:px-16 xl:py-8 2xl:px-16 2xl:py-8 bg-white container flex flex-col justify-between mx-auto space-y-16  lg:my-8 lg:flex-row lg:items-center rounded authShadow">
 
                         <div className="w-1/2">
                             <div className="left-0 2xl:-mt-16 logoHeightAndWidth">
@@ -25,7 +25,7 @@ export default function AccessRequest() {
 
                             </div>
 
-                            <div className="ml-12">
+                            <div className="ml-14">
 
 
                                 <div className="pt-10 xl:pt-0 2xl:pt-10">
@@ -38,7 +38,7 @@ export default function AccessRequest() {
                                 </div>
                             </div>
 
-                            <div className="ml-12">
+                            <div className="ml-14">
                                 <form action="" className="text-sm">
                                 <div className="my-4 2xl:mt-8 text-sm w-1/2 input-container">
                                         <input type="text" name="password" id="password" placeholder="Enter Full Name" className="w-full px-3 py-1 inputClass focus:outline-none text-sm  rounded" />
