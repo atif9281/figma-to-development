@@ -27,7 +27,7 @@ export default function Banks() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start px-8 pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -49,7 +49,7 @@ export default function Banks() {
                                     </div>
                                     <div className="my-auto">
                                         <div className="text-sm font-normal text-white">
-                                            <button type="button" onClick={openAddModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Add</button>
+                                            <button type="button" onClick={openAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
                                             <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title={clientDetails}>
                                                 <div className="">
                                                     <div className="px-16 pt-4 pb-8">
@@ -80,13 +80,13 @@ export default function Banks() {
                                                             </div>
 
                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
+                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                             </div>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </ModalComponent>
-                                            <button type="button" onClick={openDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Delete</button>
+                                            <button type="button" onClick={openDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                             <ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
                                                 <div className="">
                                                     <div className="px-16 pt-4 pb-8">
@@ -114,7 +114,7 @@ export default function Banks() {
                                                             </div>
 
                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                <button type="button" onClick={openConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Delete</button>
+                                                                <button type="button" onClick={openConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Delete</button>
                                                                 <ModalComponent isOpen={confimDeleteModel} closeModal={closeConfirmDeleteModal} title="">
                                                                     <div className="">
                                                                         <form action="" className="text-sm">
@@ -128,14 +128,14 @@ export default function Banks() {
                                                                                 </div>
 
                                                                                 <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">cancel</button>
-                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">delete</button>
+                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">cancel</button>
+                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">delete</button>
                                                                                 </div></div>
 
                                                                         </form>
                                                                     </div>
                                                                 </ModalComponent>
-                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
+                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
 
                                                             </div>
                                                         </form>
@@ -153,7 +153,7 @@ export default function Banks() {
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs ">
+                                                    <thead className="text-xs 2xl:text-base">
                                                         <tr className="text-left text-nowrap border border-b-darker-secondary ">
                                                             <th scope="col" className="text-center pt-2">Bank</th>
 
@@ -165,7 +165,7 @@ export default function Banks() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-xs ">
+                                                    <tbody className="backgroundColor text-xs  2xl:text-base">
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium text-center ">FNB</td>
@@ -207,8 +207,8 @@ export default function Banks() {
 
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                        <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Send</button>
-                                                                                        <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Send</button>
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                                                     </div>
                                                                                 </form>
                                                                             </div>
@@ -250,12 +250,12 @@ export default function Banks() {
                                 </div>
 
                                 <div className="flex flex-col p-4">
-                                    <div className="text-base font-normal pb-2">SOUTH AFRICA</div>
+                                    <div className="text-base font-normal pb-2">UNITED KINGDOM</div>
                                     <div>
                                         <div className='userTable backgroundColor boxShadow'>
 
                                             <div className="relative scrollbar-thin">
-                                                <table className="w-full text-sm items-center">
+                                                <table className="w-full text-sm items-center  2xl:text-base">
                                                     <thead className="text-xs ">
                                                         <tr className="text-left text-nowrap border border-b-darker-secondary ">
                                                             <th scope="col" className="text-center pt-2">Bank</th>
@@ -268,7 +268,7 @@ export default function Banks() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-xs ">
+                                                    <tbody className="backgroundColor text-xs  2xl:text-base">
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium text-center ">FNB</td>

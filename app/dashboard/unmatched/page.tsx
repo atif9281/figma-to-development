@@ -8,7 +8,7 @@ export default function Unmatched() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start px-8 pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -26,15 +26,15 @@ export default function Unmatched() {
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs ">
+                                                    <thead className="text-xs 2xl:text-base">
                                                         <tr className="text-left text-nowrap border border-t-0 border-l-0 border-r-0 border-b-secondary ">
                                                             <th scope="col" className="text-center pt-2">Date</th>
 
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Source</th>
-                                                            <th scope="col" className="text-center pt-2 border border-t-0 border-secondary"><div className="flex flex-row justify-between items-center"><div className="pl-2">Reference</div><div className="flex flex-row mb-1">
+                                                            <th scope="col" className="text-center pt-2 border border-t-0 border-secondary"><div className="flex flex-row justify-between items-center"><div className="pl-2 2xl:text-base">Reference</div><div className="flex flex-row mb-1">
                                                                 <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-5">
                                                                     <img className="pl-2" src="/images/Search.png"></img>
-                                                                    <p className="text-xs font-normal my-auto pl-2 pr-32">Search</p>
+                                                                    <p className="text-xs 2xl:text-base font-normal my-auto pl-2 pr-32">Search</p>
                                                                 </div>
 
                                                             </div></div></th>
@@ -45,7 +45,7 @@ export default function Unmatched() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className=" text-xs ">
+                                                    <tbody className=" text-xs 2xl:text-base">
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary ">
                                                             <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>

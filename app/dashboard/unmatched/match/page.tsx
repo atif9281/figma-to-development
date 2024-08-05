@@ -26,7 +26,7 @@ export default function Match() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start px-8 pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -42,7 +42,7 @@ export default function Match() {
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs text-white">
+                                                    <thead className="text-xs text-white 2xl:text-base">
                                                         <tr className="text-left text-nowrap  ">
                                                             <th scope="col" className=" pt-2">Date</th>
 
@@ -53,7 +53,7 @@ export default function Match() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="darkBackground text-xs ">
+                                                    <tbody className="darkBackground text-xs 2xl:text-base">
 
 
 
@@ -157,7 +157,7 @@ export default function Match() {
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs ">
+                                                    <thead className="text-xs 2xl:text-base">
                                                         <tr className="text-left text-nowrap border  border-b-darker-secondary  ">
                                                             <th scope="col" className="text-center pt-2">Client ID</th>
 
@@ -169,7 +169,7 @@ export default function Match() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-xs ">
+                                                    <tbody className="backgroundColor text-xs 2xl:text-base">
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium text-center py-1">Text</td>
@@ -199,8 +199,8 @@ export default function Match() {
                                                                                         </div>
 
                                                                                         <div className="text-sm font-normal text-white flex flex-row justify-center mt-2">
-                                                                                            <button type="button" onClick={closeAddModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Match</button>
-                                                                                            <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
+                                                                                            <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Match</button>
+                                                                                            <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                         </div></div>
 
                                                                                 </form>

@@ -1,10 +1,10 @@
 export default function Data() {
     return (
         <>
-            <div className="w-5/6  flex flex-col justify-start px-8 pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
                     
-                    <div className=" basis-10/12 heading2">Dashboard</div>
+                    <div className=" basis-10/12 heading2 pl-0 md:pl-7 lg:pl-7 xl:pl-7 2xl:pl-7">Dashboard</div>
 
                 </div>
                 <div className="">

@@ -28,7 +28,7 @@ export default function Withdraw () {
     return (
         <>
         
-        <div className="w-5/6  flex flex-col justify-start px-8 pt-5 backgroundColor">
+        <div className="w-5/6  flex flex-col justify-start  pt-5 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -39,14 +39,14 @@ export default function Withdraw () {
                             <div className=" rounded">
                                 
 
-                                <div className="flex flex-col px-4">
+                                <div className="flex flex-col">
                                     <div className="text-sm font-normal pt-1 pb-1 uppercase">Pending Release</div>
                                     <div>
                                         <div className=' boxShadow bg-white'>
 
                                             <div className="relative scrollbar-thin">
-                                            <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs  ">
+                                            <table className="w-full text-sm items-center  2xl:text-base ">
+                                                    <thead className="text-xs   2xl:text-base ">
                                                         <tr className=" text-left text-nowrap border border-b-secondary ">
                                                             <th scope="col" className="text-center pt-4">Date</th>
 
@@ -73,8 +73,8 @@ export default function Withdraw () {
                                                                                     </div>
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Release</button>
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Release</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -85,7 +85,7 @@ export default function Withdraw () {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className=" text-xs ">
+                                                    <tbody className=" text-xs  2xl:text-base ">
 
                                                         
 
@@ -126,7 +126,7 @@ export default function Withdraw () {
                                                                             </div>
 
                                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
+                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                                             </div>
                                                                         </form>
                                                                     </div>
@@ -153,8 +153,8 @@ export default function Withdraw () {
                                                                                     </div>
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-2">
-                                                                                        <button type="button" onClick={closeAddModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Decline</button>
-                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Decline</button>
+                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -233,14 +233,14 @@ export default function Withdraw () {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col px-4">
+                                <div className="flex flex-col ">
                                     <div className="text-sm font-normal pt-3 pb-1 text-red-800 uppercase">Declined Withdrawals</div>
                                     <div>
                                         <div className=' boxShadow bg-white'>
 
                                             <div className="relative scrollbar-thin pb-2">
-                                            <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs ">
+                                            <table className="w-full text-sm items-center  2xl:text-base ">
+                                                    <thead className="text-xs  2xl:text-base ">
                                                         <tr className="text-left text-nowrap border border-b-secondary ">
                                                             <th scope="col" className="text-center pt-4">Date</th>
 
@@ -260,7 +260,7 @@ export default function Withdraw () {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className=" text-xs ">
+                                                    <tbody className=" text-xs  2xl:text-base ">
 
                                                         
 

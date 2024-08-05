@@ -10,6 +10,8 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
+
+
 .backgroundColor {
   background: rgba(240, 243, 238, 1);
 
@@ -266,4 +268,20 @@ font-weight: 700;
     width: 331.23px; /* Set the container width */
     height: 42.26px; /* Set the container height */
   }
+
+  .heading2 {
+    line-height: 48px;
+    font-size: 40px;
+  }
+
+  li{
+    font-size: 26px;
+    margin-top: 12px;
+  }
+  p,
+  table,
+  button {
+    font-size: 12px;
+  }
+
 }

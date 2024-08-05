@@ -21,13 +21,13 @@ export default function Matched() {
 
 
     const clientDetails = <p className="mt-8 ml-14 darkGreen heading2">Client Details</p>;
-        
+
 
 
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start px-8 pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -43,8 +43,8 @@ export default function Matched() {
                                         <div className=' boxShadow p-2'>
 
                                             <div className="relative scrollbar-thin">
-                                                <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs ">
+                                                <table className="w-full text-sm 2xl:text-base items-center">
+                                                    <thead className="text-xs  2xl:text-base ">
                                                         <tr className="text-left text-nowrap border border-t-0 border-l-0 border-r-0 border-b-secondary ">
                                                             <th scope="col" className="text-center pt-2">Date</th>
 
@@ -72,8 +72,8 @@ export default function Matched() {
                                                                                     </div>
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Release</button>
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Release</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -84,7 +84,7 @@ export default function Matched() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className=" text-xs ">
+                                                    <tbody className=" text-xs  2xl:text-base ">
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
                                                             <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
@@ -124,7 +124,7 @@ export default function Matched() {
                                                                             </div>
 
                                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Close</button>
+                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                                             </div>
                                                                         </form>
                                                                     </div>
@@ -151,8 +151,8 @@ export default function Matched() {
                                                                                     </div>
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-2">
-                                                                                        <button type="button" onClick={closeAddModal} className=" buttonColor rounded mr-2 px-2 h-6 w-16 py-1">Decline</button>
-                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded px-1 w-16 h-6 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Decline</button>
+                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
