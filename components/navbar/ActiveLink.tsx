@@ -14,7 +14,7 @@ const ActiveLink = ({ href, children }: ActiveLinkProps) => {
   const isActive = pathname === href;
 
   return (
-    <li className="pb-2">
+    <li className="pb-2 xl:pb-2 2xl:pb-3">
       <Link legacyBehavior href={href}>
         <a className={`link ${isActive ? 'activeLink' : ''}`}>{children}</a>
       </Link>

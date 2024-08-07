@@ -22,12 +22,13 @@ export default function Banks() {
     const openSendBankDetails = () => setSendBankDetails(true);
     const closeSendBankDetails = () => setSendBankDetails(false);
 
-    const clientDetails = <p className="mt-8 ml-14 darkGreen heading2">Client Details</p>;
+    const clientDetails = <p className="mt-10 ml-14 darkGreen heading5">View / Send Bank Account Details</p>;
+    const bankAddDetails = <p className="mt-10 ml-14 darkGreen heading5">Add New Bank Account</p>;
 
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-8 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -36,51 +37,49 @@ export default function Banks() {
                         </div>
                         <div className="mt-2">
                             <div className="bg-white rounded boxShadow">
-                                <div className="flex flex-row justify-between p-4 pb-2">
+                                <div className="flex flex-row justify-between p-4  pb-2">
                                     <div className="flex flex-row ">
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-5">
-                                            <div className="pl-2"><img className="w-4 h-4" src="/images/filter.png"></img></div>
-                                            <p className="text-xs font-normal my-auto px-2 pr-12">Filter by country</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg  input-search-container">
+                                            <div className="pl-4"><img className="w-4 h-4" src="/images/filter.png"></img></div>
+                                            <p className="text-xs font-normal my-auto  pr-8"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Filter by country"></input></p>
                                         </div>
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-5">
-                                            <div className="pl-2"><img className="w-4 h-4" src="/images/filter.png"></img></div>
-                                            <p className="text-xs font-normal my-auto px-2 pr-12">Filter by bank</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg  input-search-container">
+                                            <div className="pl-4"><img className="w-4 h-4" src="/images/filter.png"></img></div>
+                                            <p className="text-xs font-normal my-auto  pr-8"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Filter by bank"></input></p>
                                         </div>
                                     </div>
                                     <div className="my-auto">
                                         <div className="text-sm font-normal text-white">
                                             <button type="button" onClick={openAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                            <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title={clientDetails}>
+                                            <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title={bankAddDetails}>
                                                 <div className="">
-                                                    <div className="px-16 pt-4 pb-8">
+                                                    <div className="p-16 py-6 pb-12">
                                                         <form action="" className="text-sm">
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">Country: </label><input type="text" name="password" id="password" value="Dropdown" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Country: </label><input type="text" name="password" id="password" placeholder="Dropdown" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">Account Name: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Account Name: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">ACH and Wire Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1 whitespace-nowrap">ACH And Wire Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">Account Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Account Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">Bank Address </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Bank Address: </label><textarea cols={20} rows={3} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] inputModal px-3 py-1 backgroundColor link focus:outline-none tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4">Reference </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
-                                                            </div>
-                                                            <div className="mb-2 darkGreen-sm flex flex-row justify-center">
-                                                                <a className="mr-4 border border-x-0 border-t-0 border-b-green-500 activeLink">View Full Profile</a>
+                                                                <label className="mr-4 mt-1">Reference </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                             </div>
 
-                                                            <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
+                                                            <div className="text-sm font-normal text-white flex flex-row justify-center mt-8">
+                                                                <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Save</button>
+                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -89,7 +88,7 @@ export default function Banks() {
                                             <button type="button" onClick={openDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                             <ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
                                                 <div className="">
-                                                    <div className="px-16 pt-4 pb-8">
+                                                    <div className="px-16 pt-4 pb-12">
                                                         <form action="" className="text-sm">
                                                             <div className="mb-2 text-sm flex flex-row justify-end">
                                                                 <label className="mr-4">Country: </label><input type="text" name="password" id="password" value="Dropdown" className="min-w-[50%] px-3 py-1 backgroundColor text-red-700 focus:outline-none text-sm tracking-tighter" />
@@ -147,13 +146,13 @@ export default function Banks() {
                                 </div>
 
                                 <div className="flex flex-col px-4">
-                                    <div className="text-base font-normal pb-2">SOUTH AFRICA</div>
+                                    <div className="heading4 font-normal pb-1">SOUTH AFRICA</div>
                                     <div>
                                         <div className=' backgroundColor boxShadow'>
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs 2xl:text-base">
+                                                    <thead className="text-sm 2xl:text-lg ">
                                                         <tr className="text-left text-nowrap border border-b-darker-secondary ">
                                                             <th scope="col" className="text-center pt-2">Bank</th>
 
@@ -165,7 +164,7 @@ export default function Banks() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-xs  2xl:text-base">
+                                                    <tbody className="backgroundColor text-sm 2xl:text-lg ">
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium text-center ">FNB</td>
@@ -177,30 +176,32 @@ export default function Banks() {
                                                                 <div className="flex flex-row justify-between items-center pl-2">
                                                                     <div>Currencies Receivable: ZAR</div><button onClick={openSendBankDetails}><ModalComponent isOpen={sendBankDetails} closeModal={closeSendBankDetails} title={clientDetails}>
                                                                         <div className="">
-                                                                            <div className="px-16 pt-4 pb-8">
+                                                                            <div className="p-16 py-4 pb-12">
                                                                                 <form action="" className="text-sm">
 
-                                                                                    <div className="mb-2 mt-2 text-sm flex flex-row justify-end">
-                                                                                        <label className="mr-4">Account Name: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 darkGreen-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4 mt-1">Account Name: </label><input type="text" name="password" id="password" placeholder="Dropdown" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                                                     </div>
-                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
-                                                                                        <label className="mr-4">ACH and Wire Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 darkGreen-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4 mt-1 whitespace-nowrap">ACH And Wire Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                                                     </div>
-                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
-                                                                                        <label className="mr-4">Account Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 darkGreen-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4 mt-1">Account Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                                                     </div>
-                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
-                                                                                        <label className="mr-4">Routing Number: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 darkGreen-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4 mt-1">Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                                                     </div>
-                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
-                                                                                        <label className="mr-4">Bank Address: </label><textarea rows={2} name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 darkGreen-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4 mt-1">Bank Address: </label><textarea cols={20} rows={3} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] inputModal px-3 py-1 backgroundColor link focus:outline-none tracking-tighter" />
                                                                                     </div>
-                                                                                    <div className="mb-2 text-sm flex flex-row justify-end">
-                                                                                        <label className="mr-4">Reference: </label><input type="text" name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                    <div className="mb-2 darkGreen-sm flex flex-row justify-end">
+                                                                                        <label className="mr-4 mt-1">Reference </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
                                                                                     </div>
+
+
                                                                                     <div className="flex justify-center"><form action="" className="text-sm max-w-[50%] ">
                                                                                         <div className="mt-6 text-sm backgroundColor ">
-                                                                                            <input type="email" name="email" id="email" placeholder="Enter Email Address" className="px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                                            <input type="email" name="email" id="email" placeholder="Enter Email Address" className=" px-3 py-1 inputEmail  focus:outline-none " />
                                                                                         </div>
 
                                                                                     </form></div>
@@ -249,14 +250,14 @@ export default function Banks() {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col p-4">
-                                    <div className="text-base font-normal pb-2">UNITED KINGDOM</div>
+                                <div className="flex flex-col p-4 2xl:pb-16">
+                                    <div className="heading4 font-normal pb-1">UNITED KINGDOM</div>
                                     <div>
                                         <div className='userTable backgroundColor boxShadow'>
 
                                             <div className="relative scrollbar-thin">
-                                                <table className="w-full text-sm items-center  2xl:text-base">
-                                                    <thead className="text-xs ">
+                                                <table className="w-full items-center  text-sm 2xl:text-lg ">
+                                                    <thead className="text-sm 2xl:text-lg ">
                                                         <tr className="text-left text-nowrap border border-b-darker-secondary ">
                                                             <th scope="col" className="text-center pt-2">Bank</th>
 
@@ -268,7 +269,7 @@ export default function Banks() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-xs  2xl:text-base">
+                                                    <tbody className="backgroundColor text-sm 2xl:text-lg ">
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium text-center ">FNB</td>

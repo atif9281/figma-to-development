@@ -9,13 +9,13 @@ export default function Navbar() {
                     <div className=" w-5/6 flex flex-row justify-end boxShadow">
 
                         <div className="flex flex-row justify-center items-center">
-                            <div className="pr-2">
-                                <img src="/images/userIcon.png" alt="" />
+                            <div className="pr-4 pl-4 userBorder border-l-1">
+                                <img src="/images/userIcon.svg" alt="" />
                             </div>
                             <div className="flex flex-row justify-center items-center">
                                 <div className="text-sm">BlockKoin Admin</div>
-                                <div className="pl-2 pr-4 ">
-                                    <img src="/images/vector.png"></img>
+                                <div className="pl-4 pr-12 ">
+                                    <img src="/images/vector.svg"></img>
                                 </div>
                             </div>
                         </div>

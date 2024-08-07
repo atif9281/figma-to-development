@@ -12,7 +12,7 @@ export default function Settings() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start  pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start  pt-8 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -33,10 +33,10 @@ export default function Settings() {
                                 <div>
                                     <ul className="flex flex-wrap text-xs font-medium text-center" role="tablist">
                                         {['Users', 'Company', 'Banks', 'Currencies', 'Restrictions', 'Limits', 'Messages'].map((tab) => (
-                                            <li role="presentation" key={tab}>
+                                            <li  role="presentation" key={tab}>
                                                 <button
-                                                    className={`inline-block px-4 py-1 rounded rounded-b-none${activeTab.toLowerCase() === tab.toLowerCase()
-                                                        ? 'link bg-white'
+                                                    className={`inline-block  px-4 py-1 rounded rounded-b-none${activeTab.toLowerCase() === tab.toLowerCase()
+                                                        ? 'link bg-white  '
                                                         : 'link tabBackGround '
                                                         }`}
                                                     onClick={() => handleTabClick(tab.toLowerCase())}

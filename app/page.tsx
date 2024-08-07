@@ -44,7 +44,7 @@ export default function Home() {
                                         <input type="email" name="email" id="email" placeholder="Enter Email Address" className="w-full px-4 py-1  inputClass less-italic focus:outline-none text-sm  rounded" />
                                     </div>
                                     <div className="mb-4 text-sm w-1/2 input-container">
-                                        <input type="password" name="password" id="password" placeholder="Enter Password" className="w-full px-4 py-1  inputClass focus:outline-none text-sm  rounded" />
+                                        <input type="password" name="password" id="password" placeholder="Enter Password" className="w-full px-4 py-1  inputClass  text-sm  rounded" />
                                     </div>
                                     <div className="2xl:mt-7 mb-4">
                                         <button type="button" onClick={handleClick} className="buttonFont px-2 pt-1.5 pb-1.5 text-white buttonColor rounded-lg">SIGN IN</button>

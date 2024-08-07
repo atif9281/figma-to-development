@@ -26,7 +26,7 @@ export default function Match() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start pt-5 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-8 backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -42,7 +42,7 @@ export default function Match() {
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs text-white 2xl:text-base">
+                                                    <thead className=" text-white text-sm 2xl:text-lg">
                                                         <tr className="text-left text-nowrap  ">
                                                             <th scope="col" className=" pt-2">Date</th>
 
@@ -53,7 +53,7 @@ export default function Match() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="darkBackground text-xs 2xl:text-base">
+                                                    <tbody className="darkBackground text-sm 2xl:text-lg">
 
 
 
@@ -123,20 +123,20 @@ export default function Match() {
 
                                 <div className="flex flex-row justify-between p-4 pb-2">
                                     <div className="flex flex-row ">
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-6">
-                                            <p className="text-xs font-normal my-auto px-2">search by name</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg ">
+                                            <p className="text-xs font-normal my-auto px-2"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Search by name"></input></p>
                                         </div>
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-6">
-                                            <p className="text-xs font-normal my-auto px-2">search by name</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg ">
+                                            <p className="text-xs font-normal my-auto px-2"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Search by name"></input></p>
                                         </div>
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-6">
-                                            <p className="text-xs font-normal my-auto px-2">search by name</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg ">
+                                            <p className="text-xs font-normal my-auto px-2"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Search by name"></input></p>
                                         </div>
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-6">
-                                            <p className="text-xs font-normal my-auto px-2">search by name</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg ">
+                                            <p className="text-xs font-normal my-auto px-2"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Search by name"></input></p>
                                         </div>
-                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-6">
-                                            <p className="text-xs font-normal my-auto px-2">search by name</p>
+                                        <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg ">
+                                            <p className="text-xs font-normal my-auto px-2"><input className="w-full px-2 py-1  inputSearch less-italic focus:outline-none text-sm  rounded" placeholder="Search by name"></input></p>
                                         </div>
 
                                     </div>
@@ -157,7 +157,7 @@ export default function Match() {
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
-                                                    <thead className="text-xs 2xl:text-base">
+                                                    <thead className="text-sm 2xl:text-lg">
                                                         <tr className="text-left text-nowrap border  border-b-darker-secondary  ">
                                                             <th scope="col" className="text-center pt-2">Client ID</th>
 
@@ -169,7 +169,7 @@ export default function Match() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-xs 2xl:text-base">
+                                                    <tbody className="backgroundColor text-sm 2xl:text-lg">
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium text-center py-1">Text</td>
@@ -184,21 +184,27 @@ export default function Match() {
                                                                         <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title="">
                                                                             <div className="">
                                                                                 <form action="" className="text-sm">
-                                                                                    <div className="p-4 py-10 border-2 border-modal rounded">
+                                                                                    <div className="p-16 py-12 border-2 border-modal rounded">
                                                                                         <div className="flex flex-col justify-center">
                                                                                             <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/successDetails.png"></img></div>
-                                                                                            <div className="flex justify-center mb-4 text-sm font-bold  darkGreen "><p className="">Match Details?</p></div>
-                                                                                            <div className="flex justify-center text-xs mb-4"><p>please provide a reason for the client/deposit match:</p></div>
+                                                                                            <div className="flex justify-center mb-4 text-sm font-bold  darkGreen "><p className="heading5">Match Details?</p></div>
+                                                                                            <div className="flex justify-center text-xs -ml-4 mb-4 2xl:text-base"><p>Please provide a reason for the client / deposit match:</p></div>
                                                                                             <div className="mb-4 text-sm flex flex-row justify-center">
-                                                                                                <textarea cols={39} rows={3} name="password" id="password" value="Sample Text" className="min-w-[50%] px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
+                                                                                                <textarea cols={39} rows={4} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] inputModal px-3 py-1 backgroundColor link focus:outline-none text-sm tracking-tighter" />
                                                                                             </div>
                                                                                             <div className="mb-4 text-xs flex flex-row justify-evenly">
-                                                                                                <label className=" mt-1.5"><p>Upload Proof Of Payment: </p></label><input type="file" className="min-w-[50%] max-w-[50%] py-1 bg-white outline-none outline-offset-0 link focus:outline-none tracking-tighter border-none  focus:border-none text-xs" />
+                                                                                                <label className="mt-0.5"><p className="mr-3">Upload Proof Of Payment: </p></label><div className="file-input-wrapper">
+                                                                                                    <input type="file" id="file-input" className="file-input" />
+                                                                                                    <label htmlFor="file-input" className="file-input-label">
+                                                                                                        Select File
+                                                                                                    </label>
+                                                                                                    <span id="file-name" className="file-name">no file uploaded</span>
+                                                                                                </div>
                                                                                             </div>
 
                                                                                         </div>
 
-                                                                                        <div className="text-sm font-normal text-white flex flex-row justify-center mt-2">
+                                                                                        <div className="text-sm font-normal text-white flex flex-row justify-center mt-8">
                                                                                             <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Match</button>
                                                                                             <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                         </div></div>
@@ -215,24 +221,7 @@ export default function Match() {
 
                                                         </tr>
 
-                                                        <tr className="border border-b-darker-secondary">
-                                                            <td scope="row" className=" font-medium text-center  py-1 ">Text</td>
-                                                            <td scope="row" className=" font-medium text-center py-1  border border-darker-secondary">Client Name</td>
-                                                            <td scope="row" className=" font-medium text-center  py-1  border border-darker-secondary">Other Name</td>
-                                                            <td scope="row" className=" font-medium  py-1 border text-center border-darker-secondary">Surname</td>
-                                                            <td scope="row" className=" font-medium  py-1 border text-center border-darker-secondary">12 feb 2002</td>
-                                                            <td scope="row" className=" text-end pr-4 py-1  font-medium ">
-                                                                <div className="">
-                                                                    <div className="text-xs font-normal text-white">
-                                                                        <button onClick={openAddModal} type="button" className=" buttonColor rounded px-2 h-4">Match</button>
 
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-
-
-                                                        </tr>
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium py-1  text-center ">Text</td>
