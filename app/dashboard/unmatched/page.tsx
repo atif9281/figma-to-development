@@ -16,7 +16,7 @@ export default function Unmatched() {
                             Unmatched Deposits
                         </div>
                         <div className="mt-2">
-                            <div className="bg-white rounded boxShadow">
+                            <div className="bg-white rounded boxShadow max-h-[70vh]  overflow-y-auto custom-scrollbar ">
 
 
                                 <div className="flex flex-col p-2">
@@ -33,7 +33,7 @@ export default function Unmatched() {
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Source</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary"><div className="flex flex-row justify-between items-center"><div className="pl-2 2xl:text-base">Reference</div><div className="flex flex-row mb-1">
                                                                 <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-5">
-                                                                    <img className="pl-2" src="/images/Search.png"></img>
+                                                                    <img className="pl-2" src="/images/Search.svg"></img>
                                                                     <p className="text-xs 2xl:text-base font-normal my-auto pl-2  input-search-container1"><input className="inputSearch1  focus:outline-none  rounded" placeholder="Search"></input></p>
                                                                 </div>
 
@@ -63,6 +63,45 @@ export default function Unmatched() {
                                                         
 
                                                         
+
+                                                        <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
+                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
+                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><Link href="/dashboard/unmatched/match" className="border border-b-secondary">Match</Link></td>
+
+
+
+
+                                                        </tr>
+
+                                                        <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
+                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
+                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><Link href="/dashboard/unmatched/match" className="border border-b-secondary">Match</Link></td>
+
+
+
+
+                                                        </tr>
+
+                                                        <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
+                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className=" font-medium pl-2  border border-secondary">Text Field</td>
+                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className=" font-medium text-center  border-r-0 border border-secondary py-2"><Link href="/dashboard/unmatched/match" className="border border-b-secondary">Match</Link></td>
+
+
+
+
+                                                        </tr>
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
                                                             <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>

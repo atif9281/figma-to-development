@@ -153,7 +153,7 @@ export default function Match() {
                                 <div className="flex flex-col px-4">
                                     <div className="text-base font-normal pb-2">Potential Deposits</div>
                                     <div>
-                                        <div className=' backgroundColor boxShadow'>
+                                        <div className=' backgroundColor boxShadow max-h-[30vh]  overflow-y-auto custom-scrollbar'>
 
                                             <div className="relative scrollbar-thin">
                                                 <table className="w-full text-sm items-center">
@@ -186,7 +186,7 @@ export default function Match() {
                                                                                 <form action="" className="text-sm">
                                                                                     <div className="p-16 py-12 border-2 border-modal rounded">
                                                                                         <div className="flex flex-col justify-center">
-                                                                                            <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/successDetails.png"></img></div>
+                                                                                            <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/successDetails.svg"></img></div>
                                                                                             <div className="flex justify-center mb-4 text-sm font-bold  darkGreen "><p className="heading5">Match Details?</p></div>
                                                                                             <div className="flex justify-center text-xs -ml-4 mb-4 2xl:text-base"><p>Please provide a reason for the client / deposit match:</p></div>
                                                                                             <div className="mb-4 text-sm flex flex-row justify-center">
@@ -258,8 +258,76 @@ export default function Match() {
                                                                 </div>
                                                             </td>
 
+                                                            
+
 
                                                         </tr>
+
+                                                        <tr className="border border-b-darker-secondary">
+                                                            <td scope="row" className=" font-medium py-1  text-center ">Text</td>
+                                                            <td scope="row" className=" font-medium py-1  text-center border border-darker-secondary">Client Name</td>
+                                                            <td scope="row" className=" font-medium  py-1 text-center  border border-darker-secondary">Other Name</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">Surname</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">12 feb 2002</td>
+                                                            <td scope="row" className=" text-end py-1  pr-4 font-medium ">
+                                                                <div className="">
+                                                                    <div className="text-xs font-normal text-white">
+                                                                        <button onClick={openAddModal} type="button" className=" buttonColor rounded px-2 h-4">Match</button>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+                                                            
+
+
+                                                        </tr>
+
+
+                                                        <tr className="border border-b-darker-secondary">
+                                                            <td scope="row" className=" font-medium py-1  text-center ">Text</td>
+                                                            <td scope="row" className=" font-medium py-1  text-center border border-darker-secondary">Client Name</td>
+                                                            <td scope="row" className=" font-medium  py-1 text-center  border border-darker-secondary">Other Name</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">Surname</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">12 feb 2002</td>
+                                                            <td scope="row" className=" text-end py-1  pr-4 font-medium ">
+                                                                <div className="">
+                                                                    <div className="text-xs font-normal text-white">
+                                                                        <button onClick={openAddModal} type="button" className=" buttonColor rounded px-2 h-4">Match</button>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+                                                            
+
+
+                                                        </tr>
+
+
+                                                        <tr className="border border-b-darker-secondary">
+                                                            <td scope="row" className=" font-medium py-1  text-center ">Text</td>
+                                                            <td scope="row" className=" font-medium py-1  text-center border border-darker-secondary">Client Name</td>
+                                                            <td scope="row" className=" font-medium  py-1 text-center  border border-darker-secondary">Other Name</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">Surname</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">12 feb 2002</td>
+                                                            <td scope="row" className=" text-end py-1  pr-4 font-medium ">
+                                                                <div className="">
+                                                                    <div className="text-xs font-normal text-white">
+                                                                        <button onClick={openAddModal} type="button" className=" buttonColor rounded px-2 h-4">Match</button>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+                                                            
+
+
+                                                        </tr>
+
 
                                                         <tr className="border border-b-darker-secondary">
                                                             <td scope="row" className=" font-medium py-1  text-center ">Text</td>

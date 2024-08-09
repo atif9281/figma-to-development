@@ -50,16 +50,16 @@ export default function Data() {
                     <div className="mt-4">
                         <div className="flex flex-row justify-evenly">
                             <div className="basis-4/12 darkBackground px-4 py-2 pb-4 rounded ">
-                                <div className="text-xs font-normal text-white mb-2 flex flex-row justify-between"><text className="pt-1">Revenue (Month to Date)</text><div className="historyTimer -mt-2 -mr-4"><img src="/images/historyTimer.png" alt=""  /></div></div>
+                                <div className="text-xs font-normal text-white mb-2 flex flex-row justify-between"><text className="pt-1">Revenue (Month to Date)</text><div className="historyTimer -mt-2 -mr-4"><img src="/images/historyTimer.svg" alt=""  /></div></div>
                                 <sup className="text-white  text-xs font-medium mr-1">$</sup><span className="activeLink boxTypography">999,999,999,999,999.99</span>
                             </div>
                             <div className="basis-4/12 flex flex-row justify-between">
                                 <div className="basis-5/12 darkBackground px-4 py-2 pb-4 rounded">
-                                <div className="text-xs font-normal text-white mb-2 flex flex-row justify-between"><text className="pt-1">New Accounts</text><div className="historyTimer -mt-2 -mr-4"><img src="/images/historyTimer.png" alt=""  /></div></div>
+                                <div className="text-xs font-normal text-white mb-2 flex flex-row justify-between"><text className="pt-1">New Accounts</text><div className="historyTimer -mt-2 -mr-4"><img src="/images/historyTimer.svg" alt=""  /></div></div>
                                 <sup className="text-white  text-xs font-medium mr-1">$</sup><span className="activeLink boxTypography">999,999,99</span>
                                 </div>
                                 <div className="basis-5/12 darkBackground px-4 py-2  pb-4 rounded">
-                                <div className="text-xs font-normal text-white mb-2 flex flex-row justify-between"><text className="pt-1 ">New Accounts</text><div className="historyTimer -mt-2 -mr-4"><img src="/images/historyTimer.png" alt=""  /></div></div>
+                                <div className="text-xs font-normal text-white mb-2 flex flex-row justify-between"><text className="pt-1 ">New Accounts</text><div className="historyTimer -mt-2 -mr-4"><img src="/images/historyTimer.svg" alt=""  /></div></div>
                                 <sup className="text-white  text-xs font-medium mr-1">$</sup><span className="activeLink boxTypography">999,999,99</span>
                                 </div>
                             </div>

@@ -371,6 +371,73 @@ text {
 
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #005640;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.checkedbox {
+  display: none;
+  width: 10px;
+  height: 10px;
+
+  background-color: #005640;
+  border-radius: 2px;
+}
+
+.checked .checkedbox {
+  display: block;
+}
+
+.checked {
+  background-color: #ffffff;
+}
+
+.custom-scrollbar {
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow-x: hidden;
+  scrollbar-3dlight-color:#999;
+  scrollbar-arrow-color:white;
+  scrollbar-base-color:white;
+  scrollbar-face-color:#999;
+  border-radius:5px 5px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 1rem;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 86, 64, 0.65);
+  ;
+  border-radius: 1rem;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: white;
+}
+
 
 /* Small devices (sm, 640px and up) */
 @media (min-width: 640px) {

@@ -19,6 +19,30 @@ export default function Matched() {
     const openConfirmDeleteModal = () => setConfimDeleteMode(true);
     const closeConfirmDeleteModal = () => setConfimDeleteMode(false);
 
+    const [checkedState, setCheckedState] = useState({
+        checkBoxid1: false,
+        checkBoxid2: false,
+        checkBoxid3: false,
+        checkBoxid4: false,
+        checkBoxid5: false,
+        checkBoxid6: false,
+        checkBoxid7: false,
+        checkBoxid8: false,
+        checkBoxid9: false,
+        checkBoxid10: false,
+        checkBoxid11: false
+
+    });
+
+
+    const handleChange = (id:any) => {
+        setCheckedState((prevState:any) => ({
+            ...prevState,
+            [id]: !prevState[id]
+        }));
+    };
+
+
 
     const clientDetails = <p className="mt-10 ml-14 darkGreen heading5">Client Details</p>;
 
@@ -56,7 +80,11 @@ export default function Matched() {
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Received Amount</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Recipient</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Method</th>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid1" checked={checkedState.checkBoxid1}
+                                                                    onChange={() => handleChange('checkBoxid1')} />
+                                                                <label htmlFor="checkBoxid1" className={`custom-checkbox ${checkedState.checkBoxid1 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" onClick={openConfirmDeleteModal} className=" buttonColor rounded mr-2 px-2 h-5">Release All</button>
                                                                     <ModalComponent isOpen={confimDeleteModel} closeModal={closeConfirmDeleteModal} title="">
@@ -64,7 +92,7 @@ export default function Matched() {
                                                                             <form action="" className="text-sm">
                                                                                 <div className="p-16 py-12 border-2 border-modal rounded">
                                                                                     <div className="flex flex-col justify-center">
-                                                                                        <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/Release.png"></img></div>
+                                                                                        <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/Release.svg"></img></div>
                                                                                         <div className="flex justify-center mb-4 text-sm font-bold text-green-500"><p className="flex flex-row darkGreen heading5">Release <p className="mx-1 activeLink heading5">12</p><p className="heading5"> Payments?</p></p></div>
                                                                                         <div className="flex justify-center text-xs mb-3 2xl:text-base"><p>this action cannot be undone.</p></div>
                                                                                         <div className="flex justify-center text-xs 2xl:text-base"><p>are you sure you want to release all the payments?</p></div>
@@ -131,17 +159,21 @@ export default function Matched() {
                                                                 </div>
                                                             </ModalComponent></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid2" checked={checkedState.checkBoxid2}
+                                                                    onChange={() => handleChange('checkBoxid2')} />
+                                                                <label htmlFor="checkBoxid2" className={`custom-checkbox ${checkedState.checkBoxid2 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
                                                                     <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title="">
                                                                         <div className="">
                                                                             <form action="" className="text-sm">
                                                                                 <div className="p-16 py-12 border-2 border-red-700 rounded">
                                                                                     <div className="flex flex-col justify-center">
-                                                                                        <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/Decline.png"></img></div>
+                                                                                        <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/Decline.svg"></img></div>
                                                                                         <div className="flex justify-center mb-4 text-sm font-bold text-red-700"><p className="heading5">Decline Deposit?</p></div>
                                                                                         <div className="flex justify-center text-xs mb-4"><p className="2xl:text-base">please provide a reason for the declined request:</p></div>
                                                                                         <div className="mb-4 text-sm flex flex-row justify-center">
@@ -175,11 +207,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid3" checked={checkedState.checkBoxid3}
+                                                                    onChange={() => handleChange('checkBoxid3')} />
+                                                                <label htmlFor="checkBoxid3" className={`custom-checkbox ${checkedState.checkBoxid3 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -197,11 +233,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid4" checked={checkedState.checkBoxid4}
+                                                                    onChange={() => handleChange('checkBoxid4')} />
+                                                                <label htmlFor="checkBoxid4" className={`custom-checkbox ${checkedState.checkBoxid4 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -217,11 +257,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid5" checked={checkedState.checkBoxid5}
+                                                                    onChange={() => handleChange('checkBoxid5')} />
+                                                                <label htmlFor="checkBoxid5" className={`custom-checkbox ${checkedState.checkBoxid5 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -237,11 +281,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid6" checked={checkedState.checkBoxid6}
+                                                                    onChange={() => handleChange('checkBoxid6')} />
+                                                                <label htmlFor="checkBoxid6" className={`custom-checkbox ${checkedState.checkBoxid6 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -257,11 +305,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid7" checked={checkedState.checkBoxid7}
+                                                                    onChange={() => handleChange('checkBoxid7')} />
+                                                                <label htmlFor="checkBoxid7" className={`custom-checkbox ${checkedState.checkBoxid7 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -277,11 +329,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid8" checked={checkedState.checkBoxid8}
+                                                                    onChange={() => handleChange('checkBoxid8')} />
+                                                                <label htmlFor="checkBoxid8" className={`custom-checkbox ${checkedState.checkBoxid8 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -297,11 +353,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid9" checked={checkedState.checkBoxid9}
+                                                                    onChange={() => handleChange('checkBoxid9')} />
+                                                                <label htmlFor="checkBoxid9" className={`custom-checkbox ${checkedState.checkBoxid9 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -317,11 +377,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid10" checked={checkedState.checkBoxid10}
+                                                                    onChange={() => handleChange('checkBoxid10')} />
+                                                                <label htmlFor="checkBoxid10" className={`custom-checkbox ${checkedState.checkBoxid10 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 
@@ -337,11 +401,15 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="rounded-sm border rec-border w-4 h-4"><div className="flex justify-center items-center pt-0.5"><div><img src="/images/rectangle.png"></img></div></div></div><div className="my-auto">
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid11" checked={checkedState.checkBoxid11}
+                                                                    onChange={() => handleChange('checkBoxid11')} />
+                                                                <label htmlFor="checkBoxid11" className={`custom-checkbox ${checkedState.checkBoxid11 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.png"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
 
                                                                 </div></div></td>
 

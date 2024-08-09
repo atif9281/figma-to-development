@@ -23,7 +23,7 @@ export default function Navbar() {
                 </div>
                 <aside className="w-1/6 absolute top-0 boxShadow min-h-screen">
                     <div className="h-[10vh] flex justify-center items-center">
-                        <img className="" src="/images/logo.png" alt="" />
+                        <img className="" src="/images/logo.svg" alt="" />
                     </div>
                     <div className="px-4 my-10 flex flex-col justify-end items-center ">
                         <ul className="text-sm text-end font-medium">

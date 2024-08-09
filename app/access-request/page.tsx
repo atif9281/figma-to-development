@@ -21,7 +21,7 @@ export default function AccessRequest() {
 
                         <div className="w-1/2">
                             <div className="left-0 2xl:-mt-16 logoHeightAndWidth">
-                                <img src="/images/logo.png" alt="logo"></img>
+                                <img src="/images/logo.svg" alt="logo"></img>
 
                             </div>
 
@@ -55,7 +55,7 @@ export default function AccessRequest() {
                         </div>
 
                         <div className="flex items-center justify-center w-full  lg:w-1/2 ">
-                            <img className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/images/accessRequest.png" alt="glasses photo" />
+                            <img className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/images/accessRequest.svg" alt="glasses photo" />
                         </div>
                     </div>
                 </section>
