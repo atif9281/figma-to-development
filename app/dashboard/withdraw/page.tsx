@@ -89,7 +89,7 @@ export default function Withdraw () {
                                                                             <form action="" className="text-sm">
                                                                                 <div className="p-16 py-12 border-2 border-modal rounded">
                                                                                     <div className="flex flex-col justify-center">
-                                                                                        <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/Release.svg"></img></div>
+                                                                                        <div className="flex justify-center mb-4"><Image  width={125} height={125} alt=""  className="h-12 w-12" src="/images/Release.svg"></Image ></div>
                                                                                         <div className="flex justify-center mb-4 text-sm font-bold text-green-500"><p className="flex flex-row darkGreen heading5">Release <p className="mx-1 activeLink heading5">10</p><p className="heading5"> Withdrawals?</p></p></div>
                                                                                         <div className="flex justify-center text-xs mb-3"><p className="2xl:text-base">this action cannot be undone.</p></div>
                                                                                         <div className="flex justify-center text-xs"><p>are you sure you want to release all the payments?</p></div>
@@ -165,13 +165,13 @@ export default function Withdraw () {
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
                                                             <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title="">
                                                                         <div className="">
                                                                             <form action="" className="text-sm">
                                                                                 <div className="p-16 py-12 border-2 border-red-700 rounded">
                                                                                     <div className="flex flex-col justify-center">
-                                                                                        <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/Decline.svg"></img></div>
+                                                                                        <div className="flex justify-center mb-4"><Image  width={125} height={125} alt="" className="h-12 w-12" src="/images/Decline.svg"></Image ></div>
                                                                                         <div className="flex justify-center mb-4 text-sm font-bold text-red-700"><p className="heading5">Decline Withdrawal?</p></div>
                                                                                         <div className="flex justify-center text-xs mb-2"><p>please provide a reason for the declined request:</p></div>
                                                                                         <div className="mb-4 text-sm flex flex-row justify-center">
@@ -210,7 +210,7 @@ export default function Withdraw () {
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
                                                                     </div></div></td>
 
                                                         </tr>
@@ -232,7 +232,7 @@ export default function Withdraw () {
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
                                                                     </div></div></td>
 
                                                         </tr>
@@ -305,7 +305,7 @@ export default function Withdraw () {
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
                                                                     </div></div></td>
 
                                                         </tr>
@@ -327,7 +327,7 @@ export default function Withdraw () {
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
                                                                     </div></div></td>
 
                                                         </tr>
@@ -351,7 +351,7 @@ export default function Withdraw () {
                                                                 <div className="text-sm font-normal text-white pl-2">
                                                                     <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
                                                                 </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><img src="/images/X.svg"></img></button>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
                                                                     </div></div></td>
 
                                                         </tr>

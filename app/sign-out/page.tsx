@@ -40,7 +40,7 @@ export default function SignOut() {
                         </div>
 
                         <div className="flex items-center justify-center w-full lg:w-1/2 ">
-                            <img className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/images/signin.svg" alt="glasses photo" />
+                            <Image  height={622} width={596}  className="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="/images/signin.svg" alt="glasses photo" />
                         </div>
                     </div>
                 </section>

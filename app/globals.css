@@ -327,6 +327,28 @@ text {
 
 }
 
+.input-modal-red-container {
+  position: relative;
+  /* Set the container height */
+
+}
+
+.inputModalRed {
+
+  color: red;
+  background-color: rgba(240, 243, 238, 1);
+
+}
+
+/* Pseudo-element for the text skew effect */
+.inputModalRed::placeholder {
+  color: red;
+
+  font-family: 'Lato', sans-serif;
+
+
+}
+
 .inputEmail {
 
   color: rgba(140, 155, 145, 1);

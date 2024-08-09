@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Unmatched() {
 
@@ -33,7 +34,7 @@ export default function Unmatched() {
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Source</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary"><div className="flex flex-row justify-between items-center"><div className="pl-2 2xl:text-base">Reference</div><div className="flex flex-row mb-1">
                                                                 <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded h-5">
-                                                                    <img className="pl-2" src="/images/Search.svg"></img>
+                                                                    <Image width={20} height={20} alt=""  className="pl-2" src="/images/Search.svg"></Image >
                                                                     <p className="text-xs 2xl:text-base font-normal my-auto pl-2  input-search-container1"><input className="inputSearch1  focus:outline-none  rounded" placeholder="Search"></input></p>
                                                                 </div>
 

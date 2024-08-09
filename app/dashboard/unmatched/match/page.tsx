@@ -186,7 +186,7 @@ export default function Match() {
                                                                                 <form action="" className="text-sm">
                                                                                     <div className="p-16 py-12 border-2 border-modal rounded">
                                                                                         <div className="flex flex-col justify-center">
-                                                                                            <div className="flex justify-center mb-4"><img className="h-12 w-12" src="/images/successDetails.svg"></img></div>
+                                                                                            <div className="flex justify-center mb-4"><Image width={125} height={125} alt="" className="h-12 w-12" src="/images/successDetails.svg"></Image ></div>
                                                                                             <div className="flex justify-center mb-4 text-sm font-bold  darkGreen "><p className="heading5">Match Details?</p></div>
                                                                                             <div className="flex justify-center text-xs -ml-4 mb-4 2xl:text-base"><p>Please provide a reason for the client / deposit match:</p></div>
                                                                                             <div className="mb-4 text-sm flex flex-row justify-center">

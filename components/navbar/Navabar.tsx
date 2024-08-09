@@ -10,12 +10,12 @@ export default function Navbar() {
 
                         <div className="flex flex-row justify-center items-center">
                             <div className="pr-4 pl-4 userBorder border-l-1">
-                                <img src="/images/userIcon.svg" alt="" />
+                                <Image width={45} height={45}  src="/images/userIcon.svg" alt="" />
                             </div>
                             <div className="flex flex-row justify-center items-center">
                                 <div className="text-sm">BlockKoin Admin</div>
                                 <div className="pl-4 pr-12 ">
-                                    <img src="/images/vector.svg"></img>
+                                    <Image width={12} height={6} src="/images/vector.svg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@ export default function Navbar() {
                 </div>
                 <aside className="w-1/6 absolute top-0 boxShadow min-h-screen">
                     <div className="h-[10vh] flex justify-center items-center">
-                        <img className="" src="/images/logo.svg" alt="" />
+                        <Image width={191} height={59} className="" src="/images/logo.svg" alt="" />
                     </div>
                     <div className="px-4 my-10 flex flex-col justify-end items-center ">
                         <ul className="text-sm text-end font-medium">
