@@ -25,7 +25,7 @@ export default function Navbar() {
                     <div className="h-[10vh] flex justify-center items-center">
                         <Image width={191} height={59} className="" src="/images/logo.svg" alt="" />
                     </div>
-                    <div className="px-4 my-10 flex flex-col justify-end items-center ">
+                    <div className="px-4 my-16 flex flex-col justify-end items-center ">
                         <ul className="text-sm text-end font-medium">
                             <ActiveLink href="/dashboard">Dashboard</ActiveLink>
                             <ActiveLink href="/reports">Reports</ActiveLink>

@@ -144,7 +144,7 @@ export default function Match() {
                                     </div>
                                     <div className="my-auto">
                                         <div className="text-sm font-normal text-white">
-                                            <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">SEARCH</button>
+                                            <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Search</button>
 
 
 
