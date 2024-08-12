@@ -1,13 +1,9 @@
-export default function UserRights () {
+import UserRights from "@/components/dashboard/UserRights"
+export default function UserRightsServerSide() {
     return (
         <>
-        
-        <div className="flex justify-end py-10">
-                <div className="w-5/6 pt-8">
-                
 
-                </div>
-            </div>
+            <UserRights></UserRights>
         </>
     )
 }

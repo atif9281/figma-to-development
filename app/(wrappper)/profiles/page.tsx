@@ -1,13 +1,9 @@
-export default function Profiles () {
+import Profiles from "@/components/dashboard/Profiles"
+export default function ProfilesServerSide() {
     return (
         <>
-        
-        <div className="flex justify-end  py-10">
-                <div className="w-5/6 pt-8">
-               
 
-                </div>
-            </div>
+            <Profiles></Profiles>
         </>
     )
 }

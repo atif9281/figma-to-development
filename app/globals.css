@@ -524,6 +524,10 @@ input[type="checkbox"] {
   border-color: rgba(170, 50, 45, 1);
 }
 
+sup {
+  font-size: 10px;
+}
+
 /* Small devices (sm, 640px and up) */
 @media (min-width: 640px) {
   .heading1 {
@@ -542,6 +546,10 @@ input[type="checkbox"] {
 
 /* Large devices (lg, 1024px and up) */
 @media (min-width: 1024px) {
+  sup {
+    font-size: 18px;
+  }
+  
   .heading1 {
     font-size: 1.5rem;
     /* This is equivalent to '2xl' in Tailwind, 24px */
@@ -623,6 +631,10 @@ input[type="checkbox"] {
 
 /* Extra large devices (2xl, 1536px and up) */
 @media (min-width: 1536px) {
+  sup {
+    font-size: 24px;
+  }
+  
   .heading1 {
     font-size: 40px;
     /* This is equivalent to '4xl' in Tailwind, 36px */

@@ -1,13 +1,9 @@
-export default function Reports () {
+import Reports from "@/components/dashboard/Reports"
+export default function ReportsServerSide() {
     return (
         <>
-        
-        <div className="flex justify-end py-10">
-                <div className="w-5/6 pt-8">
-                
 
-                </div>
-            </div>
+            <Reports></Reports>
         </>
     )
 }

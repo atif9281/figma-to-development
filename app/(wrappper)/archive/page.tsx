@@ -1,13 +1,9 @@
-export default function Archive() {
+import Archive from "@/components/dashboard/Archive"
+export default function ArchiveServerSide() {
     return (
         <>
 
-<div className="flex justify-end  py-10">
-                <div className="w-5/6 pt-8">
-                
-
-                </div>
-            </div>
+            <Archive></Archive>
         </>
     )
 }

@@ -1,13 +1,8 @@
-export default function Fees () {
+import Fees from "@/components/dashboard/Fees"
+export default function FeesServerSide () {
     return (
         <>
-        
-        <div className="flex justify-end py-10">
-                <div className="w-5/6 pt-8">
-                
-
-                </div>
-            </div>
+<Fees></Fees>
         </>
     )
 }
