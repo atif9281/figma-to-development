@@ -1,10 +1,10 @@
 "use client";
-
-import Image from "next/image"
 import { useRouter } from "next/navigation";
-export default function Home() {
+import Image from "next/image"
 
+export default function SignIn() {
 
+    
   const router:any = useRouter();
 
   const handleClick = () => {

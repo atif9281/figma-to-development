@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import Navbar from "@/components/navbar/Navabar";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,14 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>
+          <Navbar /> {/* Navbar is included here */}
+          <main className="flex justify-end min-h-[90vh]">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }

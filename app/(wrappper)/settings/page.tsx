@@ -55,7 +55,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -63,7 +63,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -79,7 +79,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -87,7 +87,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className=" redBackground  rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -95,7 +95,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +103,7 @@ export default function Settings() {
                                             <div className="flex flex-row justify-end my-auto h-[60vh]">
                                                 <div className="text-sm font-normal text-white">
                                                     <button type="button" className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Add</button>
-                                                    <button type="button" className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                                    <button type="button" className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                                 </div>
                                             </div>
                                         </div>

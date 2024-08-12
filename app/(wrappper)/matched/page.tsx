@@ -101,7 +101,7 @@ export default function Matched() {
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-8">
                                                                                         <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Release</button>
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -122,7 +122,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
                                                                 <div className="">
                                                                     <div className="p-16 py-6 pb-12">
                                                                         <form action="" className="text-sm">
@@ -152,7 +152,7 @@ export default function Matched() {
                                                                             </div>
 
                                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
+                                                                                <button type="button" onClick={closeDeleteModal} className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                                             </div>
                                                                         </form>
                                                                     </div>
@@ -171,10 +171,10 @@ export default function Matched() {
                                                                     <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title="">
                                                                         <div className="">
                                                                             <form action="" className="text-sm">
-                                                                                <div className="p-16 py-12 border-2 border-red-700 rounded">
+                                                                                <div className="p-16 py-12 redBorderColor rounded">
                                                                                     <div className="flex flex-col justify-center">
                                                                                         <div className="flex justify-center mb-4"><Image width={125} height={125} alt=""   className="h-12 w-12" src="/images/Decline.svg"></Image ></div>
-                                                                                        <div className="flex justify-center mb-4 text-sm font-bold text-red-700"><p className="heading5">Decline Deposit?</p></div>
+                                                                                        <div className="flex justify-center mb-4 text-sm font-bold redColor"><p className="heading5">Decline Deposit?</p></div>
                                                                                         <div className="flex justify-center text-xs mb-4"><p className="2xl:text-base">please provide a reason for the declined request:</p></div>
                                                                                         <div className="mb-4 text-sm flex flex-row justify-center">
                                                                                             <textarea cols={31} rows={4} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] inputModal px-3 py-1 backgroundColor  link focus:outline-none text-sm tracking-tighter" />
@@ -184,7 +184,7 @@ export default function Matched() {
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
                                                                                         <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Decline</button>
-                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeAddModal} className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -205,7 +205,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid3" checked={checkedState.checkBoxid3}
@@ -231,7 +231,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid4" checked={checkedState.checkBoxid4}
@@ -255,7 +255,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid5" checked={checkedState.checkBoxid5}
@@ -279,7 +279,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid6" checked={checkedState.checkBoxid6}
@@ -303,7 +303,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid7" checked={checkedState.checkBoxid7}
@@ -327,7 +327,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid8" checked={checkedState.checkBoxid8}
@@ -351,7 +351,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid9" checked={checkedState.checkBoxid9}
@@ -375,7 +375,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid10" checked={checkedState.checkBoxid10}
@@ -399,7 +399,7 @@ export default function Matched() {
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Number Field</td>
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">EUR</td>
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid11" checked={checkedState.checkBoxid11}

@@ -98,7 +98,7 @@ export default function Withdraw () {
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-8">
                                                                                         <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Release</button>
-                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeConfirmDeleteModal} className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -120,7 +120,7 @@ export default function Withdraw () {
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
                                                                 <div className="">
                                                                     <div className="p-16 py-6 pb-12">
                                                                         <form action="" className="text-sm">
@@ -150,7 +150,7 @@ export default function Withdraw () {
                                                                             </div>
 
                                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
-                                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
+                                                                                <button type="button" onClick={closeDeleteModal} className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                                             </div>
                                                                         </form>
                                                                     </div>
@@ -169,10 +169,10 @@ export default function Withdraw () {
                                                             <ModalComponent isOpen={isAddModalOpen} closeModal={closeAddModal} title="">
                                                                         <div className="">
                                                                             <form action="" className="text-sm">
-                                                                                <div className="p-16 py-12 border-2 border-red-700 rounded">
+                                                                                <div className="p-16 py-12 redBorderColor rounded">
                                                                                     <div className="flex flex-col justify-center">
                                                                                         <div className="flex justify-center mb-4"><Image  width={125} height={125} alt="" className="h-12 w-12" src="/images/Decline.svg"></Image ></div>
-                                                                                        <div className="flex justify-center mb-4 text-sm font-bold text-red-700"><p className="heading5">Decline Withdrawal?</p></div>
+                                                                                        <div className="flex justify-center mb-4 text-sm font-bold redColor"><p className="heading5">Decline Withdrawal?</p></div>
                                                                                         <div className="flex justify-center text-xs mb-2"><p>please provide a reason for the declined request:</p></div>
                                                                                         <div className="mb-4 text-sm flex flex-row justify-center">
                                                                                             <textarea cols={31} rows={3} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] inputModal px-3 py-1 backgroundColor link focus:outline-none tracking-tighter" />
@@ -182,7 +182,7 @@ export default function Withdraw () {
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
                                                                                         <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Decline</button>
-                                                                                        <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                                        <button type="button" onClick={closeAddModal} className="redBackground rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                     </div></div>
 
                                                                             </form>
@@ -200,7 +200,7 @@ export default function Withdraw () {
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid3" checked={checkedState.checkBoxid3}
@@ -222,7 +222,7 @@ export default function Withdraw () {
                                                             <td scope="row" className=" font-medium text-center border-b-0 border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center border-b-0  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid4" checked={checkedState.checkBoxid4}
@@ -254,7 +254,7 @@ export default function Withdraw () {
                                 </div>
 
                                 <div className="flex flex-col ">
-                                    <div className="heading3 font-normal pt-3 pb-1 text-red-800 uppercase">Declined Withdrawals</div>
+                                    <div className="heading3 font-normal pt-3 pb-1 redColor uppercase">Declined Withdrawals</div>
                                     <div>
                                         <div className=' boxShadow bg-white'>
 
@@ -295,7 +295,7 @@ export default function Withdraw () {
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid6" checked={checkedState.checkBoxid6}
@@ -317,7 +317,7 @@ export default function Withdraw () {
                                                             <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid7" checked={checkedState.checkBoxid7}
@@ -341,7 +341,7 @@ export default function Withdraw () {
                                                             <td scope="row" className=" font-medium text-center border-b-0 border border-secondary">GBP</td>
                                                             <td scope="row" className=" font-medium text-center border-b-0  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a className="border border-b-secondary">Text Field</a></button></td>
+                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid8" checked={checkedState.checkBoxid8}

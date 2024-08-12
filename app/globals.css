@@ -4,10 +4,39 @@
 
 p,
 a,
-table,
 div,
 button {
   font-family: 'Lato', sans-serif;
+}
+
+
+table{
+  font-family: 'Lato', sans-serif;
+  color: #14302A;
+}
+
+.tableLink{
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 86, 64, 1);
+  color: rgba(0, 86, 64, 1);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+
+}
+
+textarea {
+  resize: none; /* Disables resizing */
+}
+
+
+
+
+.headerShadow {
+  box-shadow: 5px 0px 10px 0px rgba(30, 30, 30, 0.25);
+
+
 }
 
 
@@ -136,23 +165,44 @@ button {
 
 }
 
+.border-b-secondary {
+  border-bottom-color: rgba(217, 217, 217, 1);
+  /* Example darker color */
+}
+
+.border-secondary {
+  border-color: rgba(217, 217, 217, 1);
+  /* Example darker color */
+}
+
+.border-l-secondary {
+  border-left-color: rgba(217, 217, 217, 1);
+  /* Example darker color */
+}
+
+.border-r-secondary {
+  border-right-color: rgba(217, 217, 217, 1);
+  /* Example darker color */
+}
+
+
 .border-b-darker-secondary {
-  border-bottom-color: #6b6f74;
+  border-bottom-color: rgba(140, 155, 145, 0.5);
   /* Example darker color */
 }
 
 .border-darker-secondary {
-  border-color: #6b6f74;
+  border-color: rgba(140, 155, 145, 0.5);
   /* Example darker color */
 }
 
 .border-l-darker-secondary {
-  border-left-color: #6b6f74;
+  border-left-color: rgba(140, 155, 145, 0.5);
   /* Example darker color */
 }
 
 .border-r-darker-secondary {
-  border-right-color: #6b6f74;
+  border-right-color: rgba(140, 155, 145, 0.5);
   /* Example darker color */
 }
 
@@ -436,10 +486,10 @@ input[type="checkbox"] {
   scrollbar-arrow-color:white;
   scrollbar-base-color:white;
   scrollbar-face-color:#999;
-  border-radius:5px 5px;
+  border-radius:4px 4px;
 }
 .custom-scrollbar::-webkit-scrollbar {
-  width: 12px;
+  width: 11px;
   height: 12px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -460,6 +510,19 @@ input[type="checkbox"] {
   background: white;
 }
 
+.redColor {
+  color: rgba(170, 50, 45, 1);
+}
+
+.redBackground {
+  background-color: rgba(170, 50, 45, 1);
+}
+
+.redBorderColor {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(170, 50, 45, 1);
+}
 
 /* Small devices (sm, 640px and up) */
 @media (min-width: 640px) {
@@ -487,7 +550,7 @@ input[type="checkbox"] {
   .heading3 {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 28.8px;
   }
 

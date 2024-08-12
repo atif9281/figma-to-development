@@ -49,7 +49,7 @@ export default function Banks() {
 
     const clientDetails = <p className="mt-10 ml-14 darkGreen heading5">View / Send Bank Account Details</p>;
     const bankAddDetails = <p className="mt-10 ml-14 darkGreen heading5">Add New Bank Account</p>;
-    const deleteClientDetails = <p className="mt-12 ml-14 text-red-700 heading5">Delete Bank Account</p>;
+    const deleteClientDetails = <p className="mt-12 ml-14 redColor heading5">Delete Bank Account</p>;
 
     return (
         <>
@@ -82,7 +82,7 @@ export default function Banks() {
                                                     <div className="p-16 py-6 pb-12">
                                                         <form action="" className="text-sm">
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1">Country: </label><input type="text" name="password" id="password" placeholder="Dropdown" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Country: </label><div className="inputModal  min-w-[50%] flex flex-row"><input type="text" name="password" id="password" placeholder="Dropdown" className="inputModal px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" /><div className="my-auto -ml-2"><Image width={12} height={6} src="/images/dropdownIcon.svg" alt=""></Image></div></div>
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
                                                                 <label className="mr-4 mt-1">Account Name: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModal min-w-[50%] px-3 py-1 backgroundColor darkGreen focus:outline-none text-sm tracking-tighter" />
@@ -105,35 +105,35 @@ export default function Banks() {
 
                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-8">
                                                                 <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Save</button>
-                                                                <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                <button type="button" onClick={closeAddModal} className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                             </div>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </ModalComponent>
-                                            <button type="button" onClick={openDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Delete</button>
+                                            <button type="button" onClick={openDeleteModal} className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Delete</button>
                                             <ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={deleteClientDetails}>
                                                 <div className="">
                                                     <div className="p-16 py-6 pb-16">
                                                         <form action="" className="text-sm">
 
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1">Account Name: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed text-red-700 min-w-[50%] px-3 py-1 backgroundColor  focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Account Name: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed redColor min-w-[50%] px-3 py-1 backgroundColor  focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1 whitespace-nowrap">ACH And Wire Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed text-red-700 min-w-[50%] px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1 whitespace-nowrap">ACH And Wire Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed redColor min-w-[50%] px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1">Account Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed text-red-700 min-w-[50%] px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Account Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed redColor min-w-[50%] px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1">Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed text-red-700 min-w-[50%] px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Routing Number: </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed redColor min-w-[50%] px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1">Bank Address: </label><textarea cols={20} rows={3} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] text-red-700 inputModalRed px-3 py-1 backgroundColor link focus:outline-none tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Bank Address: </label><textarea cols={20} rows={3} name="password" id="password" placeholder="Sample Text" className="min-w-[50%] redColor inputModalRed px-3 py-1 backgroundColor link focus:outline-none tracking-tighter" />
                                                             </div>
                                                             <div className="mb-2 darkGreen-sm flex flex-row justify-end">
-                                                                <label className="mr-4 mt-1">Reference </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed min-w-[50%] text-red-700 px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
+                                                                <label className="mr-4 mt-1">Reference </label><input type="text" name="password" id="password" placeholder="Sample Text" className="inputModalRed min-w-[50%] redColor px-3 py-1 backgroundColor focus:outline-none text-sm tracking-tighter" />
                                                             </div>
 
                                                             <div className="text-sm font-normal text-white flex flex-row justify-center mt-12">
@@ -141,10 +141,10 @@ export default function Banks() {
                                                                 <ModalComponent isOpen={confimDeleteModel} closeModal={closeConfirmDeleteModal} title="">
                                                                     <div className="">
                                                                         <form action="" className="text-sm">
-                                                                            <div className="m-12 p-16 py-12 border-2 border-red-700 rounded">
+                                                                            <div className="m-12 p-16 py-12 redBorderColor rounded">
                                                                                 <div className="flex flex-col justify-center">
                                                                                     <div className="flex justify-center mb-4"><Image alt="" width={125} height={125}  className="h-12 w-12" src="/images/component.svg"></Image ></div>
-                                                                                    <div className="flex justify-center mb-4 text-sm font-bold text-red-700 heading5"><p>Are You Sure?</p></div>
+                                                                                    <div className="flex justify-center mb-4 text-sm font-bold redColor heading5"><p>Are You Sure?</p></div>
                                                                                     <div className="flex justify-center mb-3 text-xs"><p>This action cannot be undone.</p></div>
                                                                                     <div className="flex justify-center text-xs"><p>Are you sure you want to delete this bank account?</p></div>
 
@@ -152,13 +152,13 @@ export default function Banks() {
 
                                                                                 <div className="text-sm font-normal text-white flex flex-row justify-center mt-6">
                                                                                     <button type="button" onClick={closeConfirmDeleteModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">cancel</button>
-                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">delete</button>
+                                                                                    <button type="button" onClick={closeConfirmDeleteModal} className=" redBackground rounded-lg px-1 w-16 h-7 py-1">delete</button>
                                                                                 </div></div>
 
                                                                         </form>
                                                                     </div>
                                                                 </ModalComponent>
-                                                                <button type="button" onClick={closeDeleteModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                <button type="button" onClick={closeDeleteModal} className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
 
                                                             </div>
                                                         </form>
@@ -241,7 +241,7 @@ export default function Banks() {
 
                                                                                     <div className="text-sm font-normal text-white flex flex-row justify-center mt-4">
                                                                                         <button type="button" onClick={closeSendBankDetails} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Send</button>
-                                                                                        <button type="button" onClick={closeSendBankDetails} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Close</button>
+                                                                                        <button type="button" onClick={closeSendBankDetails} className=" redBackground rounded-lg px-1 w-16 h-7 py-1">Close</button>
                                                                                     </div>
                                                                                 </form>
                                                                             </div>

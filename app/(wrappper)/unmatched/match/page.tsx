@@ -35,50 +35,52 @@ export default function Match() {
                         </div>
                         <div className="mt-2">
                             <div className="bg-white rounded boxShadow pb-4">
-                                <div className="rounded">
-                                    <div className="uppercase darkBackground pt-4 pl-4 activeLink"><div className="w-44">Unmatched Deposit</div></div>
+                                <div className="rounded-md">
                                     <div className="">
-                                        <div className=' darkBackground  pb-4 pl-4'>
+                                        <div className="uppercase darkBackground pt-4 pl-4 activeLink rounded-md rounded-b-none"><div className="w-44">Unmatched Deposit</div></div>
+                                        <div className=" rounded-md">
+                                            <div className=' darkBackground  pb-4 pl-4 rounded-md rounded-t-none'>
 
-                                            <div className="relative scrollbar-thin">
-                                                <table className="w-full text-sm items-center">
-                                                    <thead className=" text-white text-sm 2xl:text-lg">
-                                                        <tr className="text-left text-nowrap  ">
-                                                            <th scope="col" className=" pt-2">Date</th>
+                                                <div className="relative scrollbar-thin">
+                                                    <table className="w-full text-sm items-center">
+                                                        <thead className=" text-white text-sm 2xl:text-lg">
+                                                            <tr className="text-left text-nowrap  ">
+                                                                <th scope="col" className=" pt-2">Date</th>
 
-                                                            <th scope="col" className=" pt-2">Source</th>
-                                                            <th scope="col" className=" pt-2">Reference</th>
-                                                            <th scope="col" className=" pt-2">Currency</th>
-                                                            <th scope="col" className=" pt-2  pr-6">Amount</th>
+                                                                <th scope="col" className=" pt-2">Source</th>
+                                                                <th scope="col" className=" pt-2">Reference</th>
+                                                                <th scope="col" className=" pt-2">Currency</th>
+                                                                <th scope="col" className=" pt-2  pr-6">Amount</th>
 
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody className="darkBackground text-sm 2xl:text-lg">
-
-
-
-                                                        <tr className="text-white">
-                                                            <td scope="row" className=" font-medium  ">01 jan 2023</td>
-                                                            <td scope="row" className=" font-medium ">Text Field</td>
-                                                            <td scope="row" className=" font-medium  ">Text Field</td>
-                                                            <td scope="row" className=" font-medium ">GBP</td>
-                                                            <td scope="row" className=" font-medium ">Number Field</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody className="darkBackground text-sm 2xl:text-lg">
 
 
 
-                                                        </tr>
+                                                            <tr className="text-white">
+                                                                <td scope="row" className=" font-medium  ">01 jan 2023</td>
+                                                                <td scope="row" className=" font-medium ">Text Field</td>
+                                                                <td scope="row" className=" font-medium  ">Text Field</td>
+                                                                <td scope="row" className=" font-medium ">GBP</td>
+                                                                <td scope="row" className=" font-medium ">Number Field</td>
+
+
+
+                                                            </tr>
 
 
 
 
 
 
-                                                    </tbody>
-                                                </table>
+                                                        </tbody>
+                                                    </table>
 
+                                                </div>
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </div>
 
                                 </div>
@@ -165,7 +167,7 @@ export default function Match() {
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-b-darker-secondary border-l-darker-secondary  border-r-darker-secondary">Other Name</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-b-darker-secondary border-l-darker-secondary  border-r-darker-secondary">Surname</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-b-darker-secondary border-r-darker-secondary">DOB</th>
-                                                            <th scope="col" className=" pt-2 text-end pr-6"><button >Match</button></th>
+                                                            <th scope="col" className=" pt-2 text-end pr-5"><button >Match</button></th>
 
                                                         </tr>
                                                     </thead>
@@ -206,7 +208,7 @@ export default function Match() {
 
                                                                                         <div className="text-sm font-normal text-white flex flex-row justify-center mt-8">
                                                                                             <button type="button" onClick={closeAddModal} className=" buttonColor rounded-lg mr-2 px-2 h-7 w-16 py-1">Match</button>
-                                                                                            <button type="button" onClick={closeAddModal} className=" bg-red-600 rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
+                                                                                            <button type="button" onClick={closeAddModal} className="  redBackground  rounded-lg px-1 w-16 h-7 py-1">Cancel</button>
                                                                                         </div></div>
 
                                                                                 </form>
@@ -258,7 +260,7 @@ export default function Match() {
                                                                 </div>
                                                             </td>
 
-                                                            
+
 
 
                                                         </tr>
@@ -279,29 +281,7 @@ export default function Match() {
                                                                 </div>
                                                             </td>
 
-                                                            
 
-
-                                                        </tr>
-
-
-                                                        <tr className="border border-b-darker-secondary">
-                                                            <td scope="row" className=" font-medium py-1  text-center ">Text</td>
-                                                            <td scope="row" className=" font-medium py-1  text-center border border-darker-secondary">Client Name</td>
-                                                            <td scope="row" className=" font-medium  py-1 text-center  border border-darker-secondary">Other Name</td>
-                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">Surname</td>
-                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">12 feb 2002</td>
-                                                            <td scope="row" className=" text-end py-1  pr-4 font-medium ">
-                                                                <div className="">
-                                                                    <div className="text-xs font-normal text-white">
-                                                                        <button onClick={openAddModal} type="button" className=" buttonColor rounded px-2 h-4">Match</button>
-
-
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-
-                                                            
 
 
                                                         </tr>
@@ -323,7 +303,29 @@ export default function Match() {
                                                                 </div>
                                                             </td>
 
-                                                            
+
+
+
+                                                        </tr>
+
+
+                                                        <tr className="border border-b-darker-secondary">
+                                                            <td scope="row" className=" font-medium py-1  text-center ">Text</td>
+                                                            <td scope="row" className=" font-medium py-1  text-center border border-darker-secondary">Client Name</td>
+                                                            <td scope="row" className=" font-medium  py-1 text-center  border border-darker-secondary">Other Name</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">Surname</td>
+                                                            <td scope="row" className=" font-medium py-1  border text-center border-darker-secondary">12 feb 2002</td>
+                                                            <td scope="row" className=" text-end py-1  pr-4 font-medium ">
+                                                                <div className="">
+                                                                    <div className="text-xs font-normal text-white">
+                                                                        <button onClick={openAddModal} type="button" className=" buttonColor rounded px-2 h-4">Match</button>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+
 
 
                                                         </tr>
