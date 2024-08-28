@@ -48,7 +48,7 @@ export default function Withdraw () {
     return (
         <>
         
-        <div className="w-5/6  flex flex-col justify-start  pt-8 backgroundColor">
+        <div className="w-5/6  flex flex-col justify-start  pt-8  2xl:pt-[74px] backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
@@ -60,24 +60,24 @@ export default function Withdraw () {
                                 
 
                                 <div className="flex flex-col">
-                                    <div className="heading3 font-normal pt-1 pb-1 uppercase">Pending Release</div>
+                                    <div className="heading3 font-normal pt-1 pb-1 2xl:pt-[45px] uppercase">Pending Release</div>
                                     <div>
-                                        <div className=' boxShadow bg-white'>
+                                        <div className=' boxShadow rounded-lg bg-white p-3  2xl:py-[45px] 2xl:px-[40px] '>
 
                                             <div className="relative scrollbar-thin">
-                                            <table className="w-full text-sm items-center  2xl:text-base ">
-                                                    <thead className="text-sm 2xl:text-lg ">
-                                                        <tr className=" text-left text-nowrap border border-b-secondary ">
-                                                            <th scope="col" className="text-center pt-4">Date</th>
+                                            <table className="w-full text-sm items-center ">
+                                                    <thead className="text-sm 2xl:text-xl ">
+                                                        <tr className=" text-left text-nowrap border border-t-0 border-l-0 border-r-0 border-b-secondary ">
+                                                            <th scope="col" className="text-start ">Date</th>
 
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Source</th>
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Reference</th>
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Currency</th>
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Total Amount</th>
+                                                            <th scope="col" className="text-center  border border-t-0 border-secondary">Source</th>
+                                                            <th scope="col" className="text-center  border border-t-0 border-secondary">Reference</th>
+                                                            <th scope="col" className="text-center  border border-t-0 border-secondary">Currency</th>
+                                                            <th scope="col" className="text-center  border border-t-0 border-secondary">Total Amount</th>
                                                             
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Recipient</th>
+                                                            <th scope="col" className="text-center border border-t-0 border-secondary">Recipient</th>
                                                             
-                                                            <td scope="row" className=" pt-4 pb-1"><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                            <td scope="row" className=" pb-1"><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid1" checked={checkedState.checkBoxid1}
                                                                     onChange={() => handleChange('checkBoxid1')} />
                                                                 <label htmlFor="checkBoxid1" className={`custom-checkbox ${checkedState.checkBoxid1 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -109,18 +109,18 @@ export default function Withdraw () {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="text-sm 2xl:text-lg ">
+                                                    <tbody className="text-sm 2xl:text-base ">
 
                                                         
 
-                                                        <tr className="border border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                        <tr className="border border-t-0 border-l-0 border-r-0 border-b-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-start ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
                                                                 <div className="">
                                                                     <div className="p-16 py-6 pb-12">
                                                                         <form action="" className="text-sm">
@@ -193,14 +193,14 @@ export default function Withdraw () {
 
                                                         
 
-                                                        <tr className="border border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                        <tr className="border border-t-0 border-l-0 border-r-0 border-b-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-start ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid3" checked={checkedState.checkBoxid3}
@@ -215,14 +215,14 @@ export default function Withdraw () {
 
                                                         </tr>
 
-                                                        <tr className="border ">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0 border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0 border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary">Number Field</td>
+                                                        <tr className="border border-t-0 border-l-0 border-r-0 border-b-0 ">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-start ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0 border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0 border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:pt-[16px]  font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid4" checked={checkedState.checkBoxid4}
@@ -254,24 +254,24 @@ export default function Withdraw () {
                                 </div>
 
                                 <div className="flex flex-col ">
-                                    <div className="heading3 font-normal pt-3 pb-1 redColor uppercase">Declined Withdrawals</div>
+                                    <div className="heading3 font-normal pt-3 2xl:pt-[37px] pb-1 redColor uppercase">Declined Withdrawals</div>
                                     <div>
-                                        <div className=' boxShadow bg-white'>
+                                        <div className=' boxShadow bg-white rounded-lg p-3 2xl:py-[40px] 2xl:px-[40px]'>
 
                                             <div className="relative scrollbar-thin pb-2">
                                             <table className="w-full text-sm items-center  2xl:text-base ">
                                                     <thead className="text-sm 2xl:text-lg ">
-                                                        <tr className="text-left text-nowrap border border-b-secondary ">
-                                                            <th scope="col" className="text-center pt-4">Date</th>
+                                                        <tr className="text-left text-nowrap border border-t-0 border-l-0 border-r-0 border-b-secondary ">
+                                                            <th scope="col" className="text-start">Date</th>
 
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Source</th>
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Reference</th>
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Currency</th>
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Total Amount</th>
+                                                            <th scope="col" className="text-center border border-t-0 border-secondary">Source</th>
+                                                            <th scope="col" className="text-center border border-t-0 border-secondary">Reference</th>
+                                                            <th scope="col" className="text-center border border-t-0 border-secondary">Currency</th>
+                                                            <th scope="col" className="text-center border border-t-0 border-secondary">Total Amount</th>
                                                             
-                                                            <th scope="col" className="text-center pt-4 border border-t-0 border-secondary">Recipient</th>
+                                                            <th scope="col" className="text-center border border-t-0 border-secondary">Recipient</th>
                                                             
-                                                            <td scope="row" className=" pt-4 pb-1"><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                            <td scope="row" className=" pb-1"><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid5" checked={checkedState.checkBoxid5}
                                                                     onChange={() => handleChange('checkBoxid5')} />
                                                                 <label htmlFor="checkBoxid5" className={`custom-checkbox ${checkedState.checkBoxid5 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -288,14 +288,14 @@ export default function Withdraw () {
 
                                                         
 
-                                                        <tr className="border border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                        <tr className="border border-b-secondary  border-l-0 border-r-0">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-start ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid6" checked={checkedState.checkBoxid6}
@@ -310,14 +310,14 @@ export default function Withdraw () {
 
                                                         </tr>
 
-                                                        <tr className="border border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
+                                                        <tr className="border border-b-secondary border-l-0 border-r-0">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-start ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid7" checked={checkedState.checkBoxid7}
@@ -334,14 +334,14 @@ export default function Withdraw () {
 
                                                         
 
-                                                        <tr className="border border-b-0">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0 border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0 border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary">Number Field</td>
+                                                        <tr className="border border-b-0 border-l-0 border-r-0">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-start ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0 border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0 border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border-b-0  border border-secondary">Number Field</td>
                                                             
-                                                            <td scope="row" className=" font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:pt-[16px]  font-medium text-center border-b-0  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
                                                             
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid8" checked={checkedState.checkBoxid8}

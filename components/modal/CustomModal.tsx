@@ -37,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, title, children }) =>
               leaveTo="opacity-0 scale-95"
             >
               
-              <div className='min-w-[50%] flex justify-center items-center ml-44'>
+              <div className='min-w-[50%] flex justify-center items-center ml-44 2xl:ml-64 2xl:mt-16'>
               <Dialog.Panel className=" transform overflow-hidden rounded bg-white  text-left align-middle shadow-xl transition-all">
                 <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900 ">
                   {title}

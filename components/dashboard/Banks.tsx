@@ -54,16 +54,16 @@ export default function Banks() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start pt-8 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-8 2xl:pt-[74px] backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
                         <div className="heading2">
                             Banks
                         </div>
-                        <div className="mt-2">
+                        <div className="mt-2 2xl:pt-[26px]">
                             <div className="bg-white rounded boxShadow">
-                                <div className="flex flex-row justify-between p-4  pb-2">
+                                <div className="flex flex-row justify-between p-4  pb-2 2xl:py-[35px] 2xl:px-[36px] ">
                                     <div className="flex flex-row ">
                                         <div className="flex flex-row backgroundColor justify-center items-center mr-2 rounded-lg  input-search-container">
                                             <div className="pl-4"><Image alt="" width={16} height={16}  className="w-4 h-4" src="/images/filter.svg"></Image ></div>
@@ -170,14 +170,14 @@ export default function Banks() {
                                 </div>
 
                                 <div className="flex flex-col px-4">
-                                    <div className="heading4 font-normal pb-1">SOUTH AFRICA</div>
-                                    <div>
-                                        <div className=' backgroundColor boxShadow'>
+                                    <div className="heading4 font-normal pb-1 2xl:px-[36px] ">SOUTH AFRICA</div>
+                                    <div className="">
+                                        <div className=' backgroundColor boxShadow  pb-2 2xl:mx-[36px] '>
 
-                                            <div className="relative scrollbar-thin">
-                                                <table className="w-full text-sm items-center">
-                                                    <thead className="text-sm 2xl:text-lg ">
-                                                        <tr className="text-left text-nowrap border border-b-darker-secondary ">
+                                            <div className="relative scrollbar-thin backgroundColor 2xl:py-[19px] 2xl:px-[22px]">
+                                                <table className="w-full text-sm 2xl:text-xl  items-center">
+                                                    <thead className=" text-sm 2xl:text-xl  ">
+                                                        <tr className="text-left text-nowrap border border-t-0 border-l-0 border-r-0  border-b-darker-secondary ">
                                                             <th scope="col" className="text-center pt-2">Bank</th>
 
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-darker-secondary">Active</th>
@@ -188,13 +188,13 @@ export default function Banks() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-sm 2xl:text-lg ">
+                                                    <tbody className="backgroundColor text-sm 2xl:text-base">
 
-                                                        <tr className="border border-b-darker-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">FNB</td>
-                                                            <td scope="row" className=" font-medium text-center border border-darker-secondary">Yes</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-darker-secondary">1</td>
-                                                            <td scope="row" className=" font-medium border border-darker-secondary"><div className="flex justify-center items-center">
+                                                        <tr className="border border-l-0 border-r-0  border-b-darker-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">FNB</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-darker-secondary">Yes</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-darker-secondary">1</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium border border-darker-secondary"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid1" checked={checkedState.checkBoxid1}
                                                                     onChange={() => handleChange('checkBoxid1')} />
                                                                 <label htmlFor="checkBoxid1" className={`custom-checkbox ${checkedState.checkBoxid1 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -251,11 +251,11 @@ export default function Banks() {
 
 
                                                         </tr>
-                                                        <tr className="border border-b-darker-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">FNB</td>
-                                                            <td scope="row" className=" font-medium text-center border border-darker-secondary">Yes</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-darker-secondary">1</td>
-                                                            <td scope="row" className=" font-medium border border-darker-secondary"><div className="flex justify-center items-center">
+                                                        <tr className="border border-l-0 border-r-0  border-b-darker-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">FNB</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-darker-secondary">Yes</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-darker-secondary">1</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium border border-darker-secondary"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid3" checked={checkedState.checkBoxid3}
                                                                     onChange={() => handleChange('checkBoxid3')} />
                                                                 <label htmlFor="checkBoxid3" className={`custom-checkbox ${checkedState.checkBoxid3 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -270,10 +270,10 @@ export default function Banks() {
 
                                                         </tr>
                                                         <tr className="">
-                                                            <td scope="row" className=" font-medium text-center ">FNB</td>
-                                                            <td scope="row" className=" font-medium text-center border border-b-0 border-darker-secondary">Yes</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-darker-secondary">1</td>
-                                                            <td scope="row" className=" font-medium border border-b-0 border-darker-secondary"><div className="flex justify-center items-center">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">FNB</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-b-0 border-darker-secondary">Yes</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-darker-secondary">1</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium border border-b-0 border-darker-secondary"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid5" checked={checkedState.checkBoxid5}
                                                                     onChange={() => handleChange('checkBoxid5')} />
                                                                 <label htmlFor="checkBoxid5" className={`custom-checkbox ${checkedState.checkBoxid5 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -299,14 +299,14 @@ export default function Banks() {
                                 </div>
 
                                 <div className="flex flex-col p-4 2xl:pb-16">
-                                    <div className="heading4 font-normal pb-1">UNITED KINGDOM</div>
+                                    <div className="heading4 font-normal pb-1  2xl:pt-[35px] 2xl:mx-[36px]">UNITED KINGDOM</div>
                                     <div>
-                                        <div className='userTable backgroundColor boxShadow'>
+                                        <div className='userTable backgroundColor boxShadow  2xl:mx-[36px]'>
 
-                                            <div className="relative scrollbar-thin">
-                                                <table className="w-full items-center  text-sm 2xl:text-lg ">
-                                                    <thead className="text-sm 2xl:text-lg ">
-                                                        <tr className="text-left text-nowrap border border-b-darker-secondary ">
+                                            <div className="relative scrollbar-thin backgroundColor 2xl:py-[19px] 2xl:px-[22px]">
+                                                <table className="w-full items-center  text-sm 2xl:text-xl ">
+                                                    <thead className=" text-sm 2xl:text-xl ">
+                                                        <tr className="text-left text-nowrap border  border-t-0 border-l-0 border-r-0  border-b-darker-secondary ">
                                                             <th scope="col" className="text-center pt-2">Bank</th>
 
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-darker-secondary">Active</th>
@@ -317,13 +317,13 @@ export default function Banks() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="backgroundColor text-sm 2xl:text-lg ">
+                                                    <tbody className="backgroundColor text-sm 2xl:text-base ">
 
-                                                        <tr className="border border-b-darker-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">FNB</td>
-                                                            <td scope="row" className=" font-medium text-center border border-darker-secondary">Yes</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-darker-secondary">1</td>
-                                                            <td scope="row" className=" font-medium border border-darker-secondary"><div className="flex justify-center items-center">
+                                                        <tr className="border border-l-0 border-r-0  border-b-darker-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">FNB</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-darker-secondary">Yes</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-darker-secondary">1</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium border border-darker-secondary"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid7" checked={checkedState.checkBoxid7}
                                                                     onChange={() => handleChange('checkBoxid7')} />
                                                                 <label htmlFor="checkBoxid7" className={`custom-checkbox ${checkedState.checkBoxid7 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -337,11 +337,11 @@ export default function Banks() {
 
 
                                                         </tr>
-                                                        <tr className="border border-b-darker-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">FNB</td>
-                                                            <td scope="row" className=" font-medium text-center border border-darker-secondary">Yes</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-darker-secondary">1</td>
-                                                            <td scope="row" className=" font-medium border border-darker-secondary"><div className="flex justify-center items-center">
+                                                        <tr className="border border-l-0 border-r-0  border-b-darker-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">FNB</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-darker-secondary">Yes</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-darker-secondary">1</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium border border-darker-secondary"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid9" checked={checkedState.checkBoxid9}
                                                                     onChange={() => handleChange('checkBoxid9')} />
                                                                 <label htmlFor="checkBoxid9" className={`custom-checkbox ${checkedState.checkBoxid9 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
@@ -356,10 +356,10 @@ export default function Banks() {
 
                                                         </tr>
                                                         <tr className="">
-                                                            <td scope="row" className=" font-medium text-center ">FNB</td>
-                                                            <td scope="row" className=" font-medium text-center border border-b-0 border-darker-secondary">Yes</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-darker-secondary">1</td>
-                                                            <td scope="row" className=" font-medium border border-b-0 border-darker-secondary"><div className="flex justify-center items-center">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">FNB</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-b-0 border-darker-secondary">Yes</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-darker-secondary">1</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium border border-b-0 border-darker-secondary"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid11" checked={checkedState.checkBoxid11}
                                                                     onChange={() => handleChange('checkBoxid11')} />
                                                                 <label htmlFor="checkBoxid11" className={`custom-checkbox ${checkedState.checkBoxid11 ? 'checked' : ''}`}><span className="checkedbox"></span></label>

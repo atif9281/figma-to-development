@@ -51,26 +51,26 @@ export default function Matched() {
     return (
         <>
 
-            <div className="w-5/6  flex flex-col justify-start pt-8 backgroundColor">
+            <div className="w-5/6  flex flex-col justify-start pt-8  2xl:pt-[74px]  backgroundColor">
                 <div className="flex flex-row text-xl font-bold darkGreen justify-evenly">
 
                     <div className=" basis-10/12 ">
                         <div className="heading2">
                             Matched Deposits
                         </div>
-                        <div className="mt-2">
+                        <div className="mt-2 2xl:pt-[27px]">
                             <div className="bg-white rounded">
 
 
                                 <div className="flex flex-col">
                                     <div>
-                                        <div className=' boxShadow p-2'>
+                                        <div className=' boxShadow p-4 2xl:py-[40px] 2xl:px-[40px] '>
 
                                             <div className="relative scrollbar-thin">
-                                                <table className="w-full text-sm 2xl:text-base items-center">
-                                                    <thead className=" text-sm 2xl:text-lg ">
+                                                <table className="w-full  text-sm 2xl:text-xl items-center">
+                                                    <thead className=" text-sm 2xl:text-xl ">
                                                         <tr className="text-left text-nowrap border border-t-0 border-l-0 border-r-0 border-b-secondary ">
-                                                            <th scope="col" className="text-start pt-2 pl-0.5">Date</th>
+                                                            <th scope="col" className="text-start pt-2 pl-0.5 2xl:pl-3">Date</th>
 
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Source</th>
                                                             <th scope="col" className="text-center pt-2 border border-t-0 border-secondary">Reference</th>
@@ -112,17 +112,17 @@ export default function Matched() {
 
                                                         </tr>
                                                     </thead>
-                                                    <tbody className="  text-sm 2xl:text-lg ">
+                                                    <tbody className="text-sm 2xl:text-base">
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button><ModalComponent isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title={clientDetails}>
                                                                 <div className="">
                                                                     <div className="p-16 py-6 pb-12">
                                                                         <form action="" className="text-sm">
@@ -198,15 +198,15 @@ export default function Matched() {
 
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid3" checked={checkedState.checkBoxid3}
                                                                     onChange={() => handleChange('checkBoxid3')} />
@@ -223,40 +223,18 @@ export default function Matched() {
 
                                                         
 
-                                                        <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
-                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
-                                                                <input type="checkbox" id="checkBoxid4" checked={checkedState.checkBoxid4}
-                                                                    onChange={() => handleChange('checkBoxid4')} />
-                                                                <label htmlFor="checkBoxid4" className={`custom-checkbox ${checkedState.checkBoxid4 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
-                                                            </div><div className="my-auto">
-                                                                <div className="text-sm font-normal text-white pl-2">
-                                                                    <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
-                                                                </div>
-                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
-
-                                                                </div></div></td>
-
-                                                        </tr>
+                                                        
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid5" checked={checkedState.checkBoxid5}
                                                                     onChange={() => handleChange('checkBoxid5')} />
@@ -272,15 +250,15 @@ export default function Matched() {
                                                         </tr>
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid6" checked={checkedState.checkBoxid6}
                                                                     onChange={() => handleChange('checkBoxid6')} />
@@ -296,15 +274,15 @@ export default function Matched() {
                                                         </tr>
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid7" checked={checkedState.checkBoxid7}
                                                                     onChange={() => handleChange('checkBoxid7')} />
@@ -320,15 +298,15 @@ export default function Matched() {
                                                         </tr>
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid8" checked={checkedState.checkBoxid8}
                                                                     onChange={() => handleChange('checkBoxid8')} />
@@ -344,15 +322,15 @@ export default function Matched() {
                                                         </tr>
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid9" checked={checkedState.checkBoxid9}
                                                                     onChange={() => handleChange('checkBoxid9')} />
@@ -368,15 +346,39 @@ export default function Matched() {
                                                         </tr>
 
                                                         <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
+                                                            <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
+                                                                <input type="checkbox" id="checkBoxid9" checked={checkedState.checkBoxid9}
+                                                                    onChange={() => handleChange('checkBoxid9')} />
+                                                                <label htmlFor="checkBoxid9" className={`custom-checkbox ${checkedState.checkBoxid9 ? 'checked' : ''}`}><span className="checkedbox"></span></label>
+                                                            </div><div className="my-auto">
+                                                                <div className="text-sm font-normal text-white pl-2">
+                                                                    <button type="button" className=" buttonColor rounded mr-2 px-2 h-5">Release</button>
+                                                                </div>
+                                                            </div><div className="pb-1 w-5"><button onClick={openAddModal}><Image  width={14} height={28} alt=""  src="/images/X.svg"></Image ></button>
+
+                                                                </div></div></td>
+
+                                                        </tr>
+
+                                                        <tr className="border border-t-0 border-l-0 border-r-0  border-b-secondary">
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid10" checked={checkedState.checkBoxid10}
                                                                     onChange={() => handleChange('checkBoxid10')} />
@@ -392,15 +394,15 @@ export default function Matched() {
                                                         </tr>
 
                                                         <tr className="">
-                                                            <td scope="row" className=" font-medium text-center ">01 Jan 2023</td>
-                                                            <td scope="row" className=" font-medium text-center border border-b-0 border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Text Field</td>
-                                                            <td scope="row" className=" font-medium text-center border border-b-0 border-secondary">GBP</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">EUR</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Number Field</td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
-                                                            <td scope="row" className=" font-medium text-center  border border-b-0 border-secondary">Auto</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center ">01 Jan 2023</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-b-0 border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-secondary">Text Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center border border-b-0 border-secondary">GBP</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-secondary">EUR</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-secondary">Number Field</td>
+                                                            <td scope="row" className="2xl:py-[16px]  font-medium text-center  border border-b-0 border-secondary"><button onClick={openDeleteModal}><a  className="tableLink">Text Field</a></button></td>
+                                                            <td scope="row" className="2xl:pt-[16px]  font-medium text-center  border border-b-0 border-secondary">Auto</td>
                                                             <td scope="row" className=" "><div className="flex justify-center items-center"><div className="flex justify-center items-center">
                                                                 <input type="checkbox" id="checkBoxid11" checked={checkedState.checkBoxid11}
                                                                     onChange={() => handleChange('checkBoxid11')} />
